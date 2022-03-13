@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ES2016",
+    "useDefineForClassFields": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "incremental": false,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "paths": {
+    "~/*": ["src/*"]
+  },
+  "exclude": ["dist", "node_modules"]
+}
