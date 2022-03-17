@@ -11,7 +11,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 <b>English</b> | <a href="README.zh-CN.md">简体中文</a>
 </div>
 
-
 ## Features
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
@@ -21,7 +20,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - Rapidly build modern websites without ever leaving your HTML.
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
-
 
 ### First-party plugins needed for Tailwind UI:
 
@@ -40,7 +38,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
 
 ## Try it now!
 

@@ -7,19 +7,17 @@
 使用Vite-Boot快速地创建 Web 应用
 </p>
 
-
-## Features
+## 特性
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - 为速度而生
 - 💪 [Typescript](https://www.typescriptlang.org/) - 强大的类型检查
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 💡 [Vue Router v4](https://router.vuejs.org/zh/) -  Vue路由系统
-- 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开HTML。
-- 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
-- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/) 
+- 💡 [Vue Router v4](https://router.vuejs.org/zh/) - Vue 路由系统
+- 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开 HTML。
+- 🎉 [NProgress](https://github.com/rstacruz/nprogress) - 页面加载进度反馈
+- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 
-
-### 集成Tailwind 插件:
+### 集成 Tailwind 插件:
 
 - [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
 - [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
@@ -30,13 +28,12 @@
 
 - [Eslint](https://eslint.org/docs/user-guide/getting-started)
 - [Prettier](https://prettier.io/docs/en/install.html)
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
+- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - 使用Prettier自动分类TailWind类名
 
-### 推荐的IDE设置
+### 推荐的 IDE 设置
 
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
 
 ## 快来试试吧！！
 
