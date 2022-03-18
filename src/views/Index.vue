@@ -1,34 +1,4 @@
 <template>
-  <div class="mb-4 rounded-xl bg-gray-100 shadow dark:bg-gray-900">
-    <div
-      class="flex flex-col items-center justify-between rounded-xl border bg-white p-4 dark:border-0 dark:bg-gray-800 md:flex-row"
-    >
-      <p class="mb-2 text-xl font-light text-gray-600 dark:text-gray-200 md:mb-0">
-        {{ isDark ? "Dark" : "Light" }}
-      </p>
-      <div class="flex flex-row flex-wrap items-center justify-center gap-4">
-        <div>
-          <div
-            class="relative mr-2 inline-block w-10 select-none align-middle transition duration-200 ease-in"
-          >
-            <input
-              id="prefix-1"
-              type="checkbox"
-              name="toggle"
-              :checked="isDark"
-              class="absolute right-4 block h-6 w-6 cursor-pointer appearance-none rounded-full border-4 bg-white duration-200 ease-in checked:right-0 checked:bg-blue-600"
-              @click="toggleDark()"
-            /><label
-              for="prefix-1"
-              class="block h-6 cursor-pointer overflow-hidden rounded-full bg-gray-300"
-            ></label>
-          </div>
-          <span class="font-medium text-gray-600 dark:text-gray-200">Dark mode</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <section>
     <div class="container mx-auto py-8 text-center">
       <div>
@@ -107,8 +77,6 @@
 </template>
 
 <script setup lang="ts">
-import { toggleDark } from "../utils/darkMode";
-import { isDark } from "../utils/darkMode";
 import appStore from "../store";
 </script>
 <style scoped></style>
