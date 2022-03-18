@@ -5,5 +5,5 @@
   </div>
 </template>
 <script setup lang="ts">
-import Navbar from "./views/Navbar.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
