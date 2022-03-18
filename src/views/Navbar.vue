@@ -1,10 +1,10 @@
 <template>
   <header
-    class="firefox:bg-opacity-90 sticky top-0 z-30 h-[72px] bg-opacity-50 backdrop-blur backdrop-filter dark:bg-opacity-90"
+    class="firefox:bg-opacity-90 sticky top-0 z-30 h-[60px] bg-opacity-50 backdrop-blur backdrop-filter dark:bg-opacity-90"
   >
     <div class="max-w-8xl mx-auto xl:px-8">
       <div
-        class="flex items-center justify-between border-b border-gray-800 px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
+        class="flex h-[60px] items-center justify-between border-b border-gray-800 px-4 py-5 sm:px-6 lg:px-8 xl:px-0"
       >
         <p class="mb-2 text-xl font-light text-gray-600 dark:text-gray-200 md:mb-0">
           {{ isDark ? "Dark" : "Light" }}
