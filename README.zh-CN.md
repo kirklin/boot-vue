@@ -44,7 +44,7 @@
 ### 克隆到本地
 
 ```bash
-git clone https://github.com/kirklin/vite-boot.git my-vite-app
+npx degit kirklin/vite-boot my-vite-app
 cd my-vite-app
 pnpm i
 ```

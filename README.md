@@ -48,7 +48,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 ### Clone to local
 
 ```bash
-git clone https://github.com/kirklin/vite-boot.git my-vite-app
+npx degit kirklin/vite-boot my-vite-app
 cd my-vite-app
 pnpm i
 ```
