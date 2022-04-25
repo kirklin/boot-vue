@@ -39,6 +39,52 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
+## directory
+
+```
+# vite-boot
+├── LICENSE
+├── README.assets                  
+│   └── vite-vue-tailwind.png
+├── README.md
+├── README.zh-CN.md
+├── index.html
+├── node_modules
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js        # tailwind configuration
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── api                  # api interface
+│   ├── assets               # static resource
+│   │   └── logo.png
+│   ├── components           # global component
+│   │   └── Navbar.vue       # Navbar component
+│   ├── env.d.ts
+│   ├── main.ts
+│   ├── router               # Vue router
+│   │   └── index.ts
+│   ├── settings.ts          # global configuration
+│   ├── store                # Pinia store   
+│   │   ├── counter.ts
+│   │   └── index.ts
+│   ├── styles               # global style 
+│   │   ├── main.scss        
+│   │   ├── nprogress.scss   # nprogress style 
+│   │   ├── tailwind.css
+│   │   └── variables.scss
+│   ├── utils                # global public method
+│   │   └── darkMode.ts
+│   └── views                # all pages
+│       └── Index.vue
+├── tailwind.config.js       # tailwind configuration
+├── tsconfig.json            # TS compilation configuration 
+└── vite.config.ts           # Vite configuration
+ 
+```
+
 ## Try it now!
 
 ### GitHub Template

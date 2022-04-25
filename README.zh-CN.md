@@ -35,6 +35,52 @@
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
+## 项目结构
+
+```
+# vite-boot
+├── LICENSE
+├── README.assets                  
+│   └── vite-vue-tailwind.png
+├── README.md
+├── README.zh-CN.md
+├── index.html
+├── node_modules
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js        # tailwind 相关配置
+├── public
+│   └── favicon.ico
+├── src
+│   ├── App.vue              # 入口页面
+│   ├── api                  # api 接口
+│   ├── assets               # 静态资源
+│   │   └── logo.png
+│   ├── components           # 全局组件
+│   │   └── Navbar.vue       # 顶部导航栏组件
+│   ├── env.d.ts
+│   ├── main.ts              # 入口文件
+│   ├── router               # Vue router
+│   │   └── index.ts
+│   ├── settings.ts          # global configuration
+│   ├── store                # Pinia 状态管理   
+│   │   ├── counter.ts
+│   │   └── index.ts
+│   ├── styles               # 全局样式
+│   │   ├── main.scss        
+│   │   ├── nprogress.scss   # nprogress 样式（顶部加载样式） 
+│   │   ├── tailwind.css     # tailwind 样式
+│   │   └── variables.scss   # SCSS全局变量
+│   ├── utils                # 项目公共方法
+│   │   └── darkMode.ts
+│   └── views                # 所有页面
+│       └── Index.vue        # APP首页
+├── tailwind.config.js       # tailwind 配置文件
+├── tsconfig.json            # TS 编译配置
+└── vite.config.ts           # Vite 配置文件
+
+```
+
 ## 快来试试吧！！
 
 ### GitHub 模板
