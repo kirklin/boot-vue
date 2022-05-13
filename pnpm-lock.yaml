@@ -28,6 +28,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.1.10
   sass: ^1.50.1
   tailwindcss: ^3.0.24
+  theme-change: ^2.0.2
   typescript: ^4.6.3
   vite: ^2.9.5
   vue: ^3.2.33
@@ -40,6 +41,7 @@ dependencies:
   nprogress: registry.npmmirror.com/nprogress/0.2.0
   pinia: registry.npmmirror.com/pinia/2.0.13_typescript@4.6.3+vue@3.2.33
   sass: registry.npmmirror.com/sass/1.50.1
+  theme-change: registry.npmmirror.com/theme-change/2.0.2
   vue: registry.npmmirror.com/vue/3.2.33
   vue-router: registry.npmmirror.com/vue-router/4.0.14_vue@3.2.33
 
@@ -4100,6 +4102,12 @@ packages:
     name: text-table
     version: 0.2.0
     dev: true
+
+  registry.npmmirror.com/theme-change/2.0.2:
+    resolution: {integrity: sha512-YvQqavf8nlGB3J7PdO0zLLhSLlgYhrqZL6By3FuzFIlWBsPTSPG/V98cHJllK3mmU97Jecei8XYiHalhy2umUw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/theme-change/-/theme-change-2.0.2.tgz}
+    name: theme-change
+    version: 2.0.2
+    dev: false
 
   registry.npmmirror.com/through/2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/through/-/through-2.3.8.tgz}

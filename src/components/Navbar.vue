@@ -4,6 +4,7 @@
       <a class="btn btn-ghost text-xl normal-case">ViteBoot</a>
     </div>
     <div class="flex-0">
+      <ThemeChange />
       <span
         class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
         data-tip="GitHub"
@@ -28,4 +29,6 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ThemeChange from "./ThemeChange.vue";
+</script>
