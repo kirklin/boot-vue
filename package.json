@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.3.1",
+    "daisyui": "^2.14.3",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
     "sass": "^1.50.1",
