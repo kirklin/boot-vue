@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer footer-center sticky bottom-0 border-t border-base-300 bg-base-200 bg-opacity-95 px-4 pt-2 text-base-content"
+    class="footer footer-center sticky bottom-0 border-t border-base-300 bg-base-200 bg-opacity-90 px-4 pt-2 text-base-content"
   >
     <div class="flex w-full max-w-6xl flex-row items-center justify-between gap-6">
       <a
@@ -14,7 +14,7 @@
               loading="lazy"
               width="54"
               height="54"
-              src="../assets/avatar.jpg"
+              :src="Avatar"
               alt="Kirk Lin"
               class="mask mask-squircle"
             />
@@ -43,4 +43,7 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import avatar from "~/assets/avatar.jpg";
+const Avatar = avatar;
+</script>

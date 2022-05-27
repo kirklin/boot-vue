@@ -1,5 +1,5 @@
 <template>
-  <div title="Change Theme" class="dropdown-end dropdown">
+  <div title="Change Theme" class="dropdown dropdown-end">
     <div tabindex="0" class="btn btn-ghost gap-1 normal-case">
       <svg
         width="20"

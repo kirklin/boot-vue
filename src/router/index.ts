@@ -4,8 +4,8 @@ import NProgress from "nprogress";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    name: "Index",
-    component: () => import("~/views/Index.vue"),
+    name: "Home",
+    component: () => import("~/views/home/index.vue"),
   },
 ];
 

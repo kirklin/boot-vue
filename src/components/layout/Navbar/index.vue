@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sticky top-0 z-30 flex h-16 w-full justify-center bg-base-100 bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
+    class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
   >
     <nav class="navbar w-full">
       <div class="flex flex-1 md:gap-1 lg:gap-2">
@@ -8,7 +8,7 @@
           <div
             class="font-title inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            <span>V<span class="lowercase">ite</span></span>
+            <span class="text-accent">V<span class="lowercase">ite</span></span>
             <span class="text-base-content">B<span class="lowercase">oot</span></span>
           </div>
         </a>
@@ -45,5 +45,5 @@
   </div>
 </template>
 <script setup lang="ts">
-import ThemeChange from "./ThemeChange.vue";
+import ThemeChange from "./components/ThemeChange.vue";
 </script>
