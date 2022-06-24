@@ -6,10 +6,21 @@
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold">Vite Boot</h1>
         <p class="mb-5">Mocking up web app with Vite-Boot <sup>(speed)</sup></p>
+        <button class="btn btn-primary" @click="testStore">Test Store</button>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const testStore = () => {
+  router.push({
+    name: "StoreTest",
+  });
+};
+</script>
 <style scoped></style>
