@@ -9,13 +9,14 @@
 
 ## 特性
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - 为速度而生
+- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - 为速度而生
 - 💪 [Typescript](https://www.typescriptlang.org/) - 强大的类型检查
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 - 💡 [Vue Router v4](https://router.vuejs.org/zh/) - Vue 路由系统
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开 HTML。
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - 页面加载进度反馈
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
+- 🌼 [Daisy](https://daisyui.com/) - 开源的 Tailwind CSS 组件库
 
 ### 集成 Tailwind 插件:
 

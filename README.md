@@ -13,13 +13,14 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
+- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
 - 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - 💡 [Vue Router v4](https://router.vuejs.org/zh/) - The official router for Vue.js
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - Rapidly build modern websites without ever leaving your HTML.
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
+- 🌼 [Daisy](https://daisyui.com/) - The free and open-source Tailwind CSS component library
 
 ### First-party plugins needed for Tailwind UI:
 
