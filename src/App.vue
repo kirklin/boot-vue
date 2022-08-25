@@ -3,8 +3,8 @@
     <div class="min-h-screen">
       <Navbar />
       <RouterView />
-      <Footer />
     </div>
+    <Footer />
   </div>
 </template>
 <script setup lang="ts">
