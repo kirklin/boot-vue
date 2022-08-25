@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer footer-center sticky bottom-0 border-t border-base-300 bg-base-200 bg-opacity-90 px-4 pt-2 text-base-content"
+    class="footer footer-center sticky bottom-0 border-t border-base-100 bg-base-200 bg-opacity-90 px-4 pt-2 text-base-content"
   >
     <div class="flex w-full max-w-6xl flex-row items-center justify-between gap-6">
       <a

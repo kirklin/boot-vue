@@ -1,5 +1,5 @@
 <template>
-  <div class="hero min-h-screen text-primary-content">
+  <div class="hero mt-[-4rem] min-h-screen text-primary-content">
     <!--  <div class="hero min-h-screen from-primary to-secondary" style="background-image: url(https://img.js.design/assets/Resources/background/home-bg-2.png);">-->
     <div class="hero-overlay place-items-center bg-gradient-to-bl from-primary to-base-100"></div>
     <div class="hero-content text-center">
