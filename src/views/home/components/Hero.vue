@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const testStore = () => {
+  router.push({
+    name: "StoreTest",
+  });
+};
+</script>
+
 <template>
   <div class="hero mt-[-4rem] min-h-screen text-primary-content">
     <!--  <div class="hero min-h-screen from-primary to-secondary" style="background-image: url(https://img.js.design/assets/Resources/background/home-bg-2.png);">-->
@@ -12,15 +24,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-
-const testStore = () => {
-  router.push({
-    name: "StoreTest",
-  });
-};
-</script>
 <style scoped></style>

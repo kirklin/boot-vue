@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import ThemeChange from "./components/ThemeChange.vue";
+</script>
+
 <template>
   <div
     class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 text-base-content backdrop-blur transition-all duration-100"
@@ -49,6 +53,3 @@
     </nav>
   </div>
 </template>
-<script setup lang="ts">
-import ThemeChange from "./components/ThemeChange.vue";
-</script>

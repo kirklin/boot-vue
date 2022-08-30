@@ -41,7 +41,7 @@
 ```
 # vite-boot
 ├── LICENSE
-├── README.assets                  
+├── README.assets
 │   └── vite-vue-tailwind.png
 ├── README.md
 ├── README.zh-CN.md
@@ -64,12 +64,12 @@
 │   ├── router               # Vue router
 │   │   └── index.ts
 │   ├── settings.ts          # global configuration
-│   ├── store                # Pinia 状态管理   
+│   ├── store                # Pinia 状态管理
 │   │   ├── counter.ts
 │   │   └── index.ts
 │   ├── styles               # 全局样式
-│   │   ├── main.scss        
-│   │   ├── nprogress.scss   # nprogress 样式（顶部加载样式） 
+│   │   ├── main.scss
+│   │   ├── nprogress.scss   # nprogress 样式（顶部加载样式）
 │   │   ├── tailwind.css     # tailwind 样式
 │   │   └── variables.scss   # SCSS全局变量
 │   ├── utils                # 项目公共方法

@@ -17,16 +17,17 @@ export enum LogLevels {
  * @param {*} [args]      - argument to log with a message
  * @param {string} style  - additional styling to message
  */
-// eslint-disable-next-line max-params
+
 function _log(
   labeled: boolean,
   msg: string,
   type = "log",
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   args?: any,
   style = "color: inherit"
 ): void {
-  // @ts-ignore
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
   if (!("console" in window) || !window.console[type]) {
     return;
   }
@@ -81,15 +82,18 @@ function _log(
 
   try {
     if (!isSimpleType) {
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](msg);
     } else if (args) {
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](`${msg} %o`, ...argsToPass);
     } else {
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](msg, ...argsToPass);
     }

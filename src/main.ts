@@ -1,10 +1,10 @@
 import { createApp } from "vue";
-import App from "~/App.vue";
-//Vue Router
+// Vue Router
+import { createPinia } from "pinia";
 import index from "./router";
 
-import { createPinia } from "pinia";
 import { registerStore } from "./store";
+import App from "~/App.vue";
 
 import "~/styles/tailwind.css";
 import "~/styles/main.scss";

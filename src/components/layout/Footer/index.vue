@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import avatar from "~/assets/avatar.jpg";
+const Avatar = avatar;
+</script>
+
 <template>
   <footer
     class="footer footer-center sticky bottom-0 border-t border-base-100 bg-base-200 bg-opacity-90 px-4 pt-2 text-base-content"
@@ -43,7 +48,3 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts">
-import avatar from "~/assets/avatar.jpg";
-const Avatar = avatar;
-</script>

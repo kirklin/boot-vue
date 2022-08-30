@@ -45,7 +45,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 ```
 # vite-boot
 ├── LICENSE
-├── README.assets                  
+├── README.assets
 │   └── vite-vue-tailwind.png
 ├── README.md
 ├── README.zh-CN.md
@@ -68,12 +68,12 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   ├── router               # Vue router
 │   │   └── index.ts
 │   ├── settings.ts          # global configuration
-│   ├── store                # Pinia store   
+│   ├── store                # Pinia store
 │   │   ├── counter.ts
 │   │   └── index.ts
-│   ├── styles               # global style 
-│   │   ├── main.scss        
-│   │   ├── nprogress.scss   # nprogress style 
+│   ├── styles               # global style
+│   │   ├── main.scss
+│   │   ├── nprogress.scss   # nprogress style
 │   │   ├── tailwind.css
 │   │   └── variables.scss
 │   ├── utils                # global public method
@@ -81,9 +81,9 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   └── views                # all pages
 │       └── Index.vue
 ├── tailwind.config.js       # tailwind configuration
-├── tsconfig.json            # TS compilation configuration 
+├── tsconfig.json            # TS compilation configuration
 └── vite.config.ts           # Vite configuration
- 
+
 ```
 
 ## Try it now!

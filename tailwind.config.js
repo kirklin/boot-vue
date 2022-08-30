@@ -14,7 +14,7 @@ module.exports = {
           "WenQuanYi Micro Hei",
           "sans-serif",
         ],
-        //黑体
+        // 黑体
         blackFont: [
           "-apple-system",
           "Noto Sans",
@@ -36,7 +36,7 @@ module.exports = {
           "WenQuanYi Zen Hei Sharp",
           "sans-serif",
         ],
-        //楷体
+        // 楷体
         kai: [
           "Baskerville",
           "Georgia",
@@ -54,7 +54,7 @@ module.exports = {
           "TW-Kai",
           "serif",
         ],
-        //宋体
+        // 宋体
         song: [
           "Georgia",
           "Nimbus Roman No9 L",
@@ -77,7 +77,7 @@ module.exports = {
           "MingLiU",
           "serif",
         ],
-        //仿宋体
+        // 仿宋体
         "fang-song": [
           "Baskerville",
           "Times New Roman",
