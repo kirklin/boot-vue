@@ -1,9 +1,9 @@
 {
   "name": "vite-boot",
   "version": "0.0.1",
-  "description": "Vite starter template with TailwindCSS",
   "private": true,
   "packageManager": "pnpm@7.9.0",
+  "description": "Vite starter template with TailwindCSS",
   "keywords": [
     "viteBoot",
     "vite-boot",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
+    "@kirklin/eslint-config": "^0.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.3.1",
@@ -44,7 +45,7 @@
     "@typescript-eslint/parser": "^5.29.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
-    "eslint": "^8.23.0",
+    "eslint": "8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
