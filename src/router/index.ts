@@ -5,7 +5,7 @@ import NProgress from "nprogress";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    redirect: "/home",
+    component: () => import("~/views/home/index.vue"),
   },
   {
     path: "/404",
