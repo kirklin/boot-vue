@@ -2,7 +2,7 @@
   "name": "vite-boot",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@7.9.0",
+  "packageManager": "pnpm@7.11.0",
   "description": "Vite starter template with TailwindCSS",
   "keywords": [
     "viteBoot",
@@ -20,7 +20,6 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prettier": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
