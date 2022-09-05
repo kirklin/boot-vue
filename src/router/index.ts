@@ -38,9 +38,8 @@ const index = createRouter({
   routes,
 });
 index.beforeEach(() => {
-  if (!NProgress.isStarted()) {
+  if (!NProgress.isStarted())
     NProgress.start();
-  }
 });
 
 index.afterEach(() => {
