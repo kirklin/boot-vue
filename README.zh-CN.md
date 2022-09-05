@@ -1,6 +1,6 @@
 <div align='center'>
 <h1>Vite-Boot </h1>
-<img src='README.assets/vite-vue-tailwind.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+<img src='README.assets/vite-vue-tailwind.png' alt='Vite-Boot - Opinionated Vite Starter Template' width='1101'/>
 </div>
 
 <p align='center'>
