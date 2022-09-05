@@ -27,9 +27,7 @@
 
 ### 编码风格
 
-- [Eslint](https://eslint.org/docs/user-guide/getting-started)
-- [Prettier](https://prettier.io/docs/en/install.html)
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - 使用 Prettier 自动分类 TailWind 类名
+- [@kirklin/eslint-config](https://github.com/kirklin/eslint-config)
 
 ### 推荐的 IDE 设置
 

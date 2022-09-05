@@ -31,9 +31,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ### Coding Style
 
-- [Eslint](https://eslint.org/docs/user-guide/getting-started)
-- [Prettier](https://prettier.io/docs/en/install.html)
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
+- [@kirklin/eslint-config](https://github.com/kirklin/eslint-config)
 
 ### Recommended IDE Setup
 
