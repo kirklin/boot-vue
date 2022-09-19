@@ -1,3 +1,10 @@
 {
-  "extends": "@kirklin"
+  "extends": [
+    "@kirklin",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "tailwindcss/no-custom-classname": "off"
+  }
 }

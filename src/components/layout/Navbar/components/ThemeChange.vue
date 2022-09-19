@@ -125,7 +125,7 @@ const themes = [
 </script>
 
 <template>
-  <div title="Change Theme" class="dropdown dropdown-end">
+  <div title="Change Theme" class="dropdown-end dropdown">
     <div tabindex="0" class="btn btn-ghost gap-1 normal-case">
       <svg
         width="20"
@@ -170,10 +170,10 @@ const themes = [
           >
             <div class="grid grid-cols-5 grid-rows-3">
               <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-                <div class="flex-grow text-sm font-bold">
+                <div class="grow text-sm font-bold">
                   {{ theme.id }}
                 </div>
-                <div class="flex flex-shrink-0 flex-wrap gap-1">
+                <div class="flex shrink-0 flex-wrap gap-1">
                   <div class="w-2 rounded bg-primary" />
                   <div class="w-2 rounded bg-secondary" />
                   <div class="w-2 rounded bg-accent" />
@@ -188,24 +188,24 @@ const themes = [
   </div>
 </template>
 
-<!-- <style scoped> -->
-<!-- .scrollbar::-webkit-scrollbar { -->
-<!--  width: 20px; -->
-<!--  height: 20px; -->
-<!-- } -->
+ <style scoped>
+ .scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+ }
 
-<!-- .scrollbar::-webkit-scrollbar-track { -->
-<!--  border-radius: 100vh; -->
-<!--  background: #f7f4ed; -->
-<!-- } -->
+ .scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+ }
 
-<!-- .scrollbar::-webkit-scrollbar-thumb { -->
-<!--  background: #e0cbcb; -->
-<!--  border-radius: 100vh; -->
-<!--  border: 3px solid #f6f7ed; -->
-<!-- } -->
+ .scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+ }
 
-<!-- .scrollbar::-webkit-scrollbar-thumb:hover { -->
-<!--  background: #c0a0b9; -->
-<!-- } -->
-<!-- </style> -->
+ .scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+ }
+ </style>
