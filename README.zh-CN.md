@@ -13,6 +13,7 @@
 - 💪 [Typescript](https://www.typescriptlang.org/) - 强大的类型检查
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 - 🤙🏻 默认开启 [响应性语法糖](https://vuejs.org/guide/extras/reactivity-transform.html)
+- 📦 [组件自动化加载](./src/components)
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 💡 [Vue Router v4](https://router.vuejs.org/zh/) - Vue 路由系统
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开 HTML。
