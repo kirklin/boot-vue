@@ -12,6 +12,7 @@
 - ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - 为速度而生
 - 💪 [Typescript](https://www.typescriptlang.org/) - 强大的类型检查
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 - 💡 [Vue Router v4](https://router.vuejs.org/zh/) - Vue 路由系统
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开 HTML。
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - 页面加载进度反馈

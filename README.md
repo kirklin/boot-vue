@@ -16,6 +16,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
 - 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 - 💡 [Vue Router v4](https://router.vuejs.org/zh/) - The official router for Vue.js
 - 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - Rapidly build modern websites without ever leaving your HTML.
 - 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
