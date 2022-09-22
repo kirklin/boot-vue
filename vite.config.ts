@@ -11,7 +11,15 @@ export default defineConfig({
     https: false,
     proxy: {},
   },
-  plugins: [vue()],
+  plugins: [
+    vue({
+      // https://vuejs.org/guide/extras/reactivity-transform.html
+      // 开启响应性语法糖 （试验性特性）
+      // Reactivity Transform
+      reactivityTransform: true,
+    }),
+
+  ],
   resolve: {
     alias: {
       "~/": `${path.resolve(__dirname, "src")}/`,
