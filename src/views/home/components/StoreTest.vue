@@ -14,7 +14,7 @@ import appStore from "~/store";
           <p class="text-4xl font-bold uppercase">
             {{ appStore.counter.count }}
           </p>
-          <button type="button" class="btn btn-primary" @click="appStore.counter.increment()">
+          <button type="button" class="btn-primary btn" @click="appStore.counter.increment()">
             increment
           </button>
         </div>

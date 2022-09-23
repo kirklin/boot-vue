@@ -12,7 +12,7 @@ import ThemeChange from "./components/ThemeChange.vue";
           to="/"
           aria-current="page"
           aria-label="Homepage"
-          class=" btn btn-ghost px-2"
+          class="btn-ghost btn px-2"
         >
           <div
             class="inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
@@ -33,7 +33,7 @@ import ThemeChange from "./components/ThemeChange.vue";
               aria-label="Github"
               target="_blank"
               href="https://github.com/kirklin/vite-boot"
-              class="btn btn-ghost drawer-button btn-square normal-case"
+              class="btn-ghost drawer-button btn-square btn normal-case"
             >
               <svg
                 width="20"

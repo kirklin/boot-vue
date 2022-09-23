@@ -15,7 +15,7 @@ const back = () => {
         </h2>
         <p>We're sorry, something is not right, page not found!</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary" @click="back">
+          <button class="btn-primary btn" @click="back">
             Back !
           </button>
         </div>

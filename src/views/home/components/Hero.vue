@@ -22,7 +22,7 @@ const testStore = () => {
         <p class="mb-5">
           Mocking up web app with Vite-Boot <sup>(speed)</sup>
         </p>
-        <button class="btn btn-primary" @click="testStore">
+        <button class="btn-primary btn" @click="testStore">
           Test Store
         </button>
       </div>
