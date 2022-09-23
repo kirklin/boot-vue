@@ -40,6 +40,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
+    "@types/node": "^18.7.15",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/parser": "^5.29.0",
     "@vitejs/plugin-vue": "^3.1.0",

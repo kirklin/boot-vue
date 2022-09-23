@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import avatar from "~/assets/avatar.jpg";
-const Avatar = avatar;
+import Avatar from "~/assets/avatar.jpg";
 </script>
 
 <template>
@@ -16,7 +15,6 @@ const Avatar = avatar;
       ><div class="avatar mr-3">
          <div class="mask mask-squircle h-14 w-14 bg-neutral p-px">
            <img
-             loading="lazy"
              width="54"
              height="54"
              :src="Avatar"

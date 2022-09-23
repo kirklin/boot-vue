@@ -3,22 +3,23 @@
     "baseUrl": ".",
     "module": "ESNext",
     "target": "ES2016",
-    "useDefineForClassFields": true,
-    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"],
     "strict": true,
-    "incremental": false,
-    "skipLibCheck": true,
     "jsx": "preserve",
-    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "lib": ["DOM", "ESNext"]
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "paths": {
-    "~/*": ["src/*"]
+    "types": [
+      "vite/client",
+    ],
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "exclude": ["dist", "node_modules"]
 }
