@@ -31,7 +31,7 @@ export default defineConfig({
         "@vueuse/head",
         "@vueuse/core",
       ],
-      dts: "src/auto-imports.d.ts",
+      dts: "types/auto-imports.d.ts",
       dirs: [
         "src/composables",
         "src/store",
@@ -43,7 +43,7 @@ export default defineConfig({
     Components({
       extensions: ["vue"],
       include: [/\.vue$/, /\.vue\?vue/],
-      dts: "src/components.d.ts",
+      dts: "types/components.d.ts",
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
     }),
   ],

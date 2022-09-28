@@ -7,10 +7,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Footer: typeof import('./components/layout/Footer/index.vue')['default']
-    Navbar: typeof import('./components/layout/Navbar/index.vue')['default']
+    Footer: typeof import('./../src/components/layout/Footer/index.vue')['default']
+    Navbar: typeof import('./../src/components/layout/Navbar/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    ThemeChange: typeof import('./components/layout/Navbar/components/ThemeChange.vue')['default']
+    ThemeChange: typeof import('./../src/components/layout/Navbar/components/ThemeChange.vue')['default']
   }
 }

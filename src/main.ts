@@ -8,7 +8,6 @@ import App from "~/App.vue";
 
 import "~/styles/tailwind.css";
 import "~/styles/main.scss";
-import "~/styles/nprogress.scss";
 
 const app = createApp(App);
 
