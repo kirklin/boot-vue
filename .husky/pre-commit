@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "husky start"
+echo "husky lint-staged start"
 npx lint-staged
-echo "husky end"
+echo "husky lint-staged end"
