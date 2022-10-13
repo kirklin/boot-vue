@@ -28,34 +28,39 @@ function _log(
 ): void {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-expect-error
-  if (!("console" in window) || !window.console[type])
+  if (!("console" in window) || !window.console[type]) {
     return;
+  }
 
   const isSimpleType = ["info", "log", "warn", "error"].includes(type);
   const argsToPass = [];
 
   switch (_log.logLevel) {
     case LogLevels.ERROR:
-      if (type !== "error")
+      if (type !== "error") {
         return;
+      }
 
       break;
 
     case LogLevels.WARN:
-      if (!["error", "warn"].includes(type))
+      if (!["error", "warn"].includes(type)) {
         return;
+      }
 
       break;
 
     case LogLevels.INFO:
-      if (!isSimpleType || labeled)
+      if (!isSimpleType || labeled) {
         return;
+      }
 
       break;
   }
 
-  if (args)
+  if (args) {
     argsToPass.push(args);
+  }
 
   const editorLabelText = "ViteBoot";
   const editorLabelStyle = `line-height: 1em;
@@ -73,8 +78,7 @@ function _log(
     if (isSimpleType) {
       argsToPass.unshift(editorLabelStyle, style);
       msg = `%c${editorLabelText}%c ${msg}`;
-    }
-    else {
+    } else {
       msg = `( ${editorLabelText} )${msg}`;
     }
   }
@@ -85,21 +89,18 @@ function _log(
       // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](msg);
-    }
-    else if (args) {
+    } else if (args) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](`${msg} %o`, ...argsToPass);
-    }
-    else {
+    } else {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-expect-error
       // eslint-disable-next-line no-console
       console[type](msg, ...argsToPass);
     }
-  }
-  catch (ignored) {}
+  } catch (ignored) {}
 }
 
 /**
