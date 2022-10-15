@@ -20,7 +20,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@vueuse/core": "^9.2.0",
