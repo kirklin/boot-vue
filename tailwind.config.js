@@ -15,7 +15,7 @@ module.exports = {
           "sans-serif",
         ],
         // 黑体
-        "blackFont": [
+        "helvetica": [
           "-apple-system",
           "Noto Sans",
           "Helvetica Neue",
@@ -37,7 +37,7 @@ module.exports = {
           "sans-serif",
         ],
         // 楷体
-        "kai": [
+        "italics": [
           "Baskerville",
           "Georgia",
           "Liberation Serif",
@@ -78,7 +78,7 @@ module.exports = {
           "serif",
         ],
         // 仿宋体
-        "fang-song": [
+        "imitation-song": [
           "Baskerville",
           "Times New Roman",
           "Liberation Serif",
