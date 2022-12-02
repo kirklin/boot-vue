@@ -49,6 +49,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       "~/": `${path.resolve(__dirname, "src")}/`,
     },
   },

@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.3.0
   '@commitlint/config-conventional': ^17.3.0
-  '@kirklin/eslint-config': ^0.2.0
+  '@kirklin/eslint-config': ^0.2.1
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
@@ -46,7 +46,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
-  '@kirklin/eslint-config': 0.2.0_hsf322ms6xhhd4b5ne6lb74y4a
+  '@kirklin/eslint-config': 0.2.1_hsf322ms6xhhd4b5ne6lb74y4a
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.4
@@ -369,8 +369,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@kirklin/eslint-config-basic/0.2.0_czs5uoqkd3podpy6vgtsxfc7au:
-    resolution: {integrity: sha512-bmtKFXVMB/Q+qXJBlXB9t5L98zXXnMs/yR0JmUctVXyY2Y76iUKxAUsbQMn0KTaRjlERSbYigAMhGWJGLGhA9A==}
+  /@kirklin/eslint-config-basic/0.2.1_czs5uoqkd3podpy6vgtsxfc7au:
+    resolution: {integrity: sha512-bc9EXJxxp5nEUnM7aCum+i5bHyWtrkzJV2j0pZc62pT+jKE/Y8ilVYFNbHbaS9oGuIsg0uA967UrfVntFp9JNQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -379,7 +379,7 @@ packages:
       eslint-plugin-html: 7.1.0
       eslint-plugin-import: 2.26.0_vbnhqcxlbs7ynbxw44hu2vq7eq
       eslint-plugin-jsonc: 2.5.0_eslint@8.28.0
-      eslint-plugin-kirklin: 0.2.0_hsf322ms6xhhd4b5ne6lb74y4a
+      eslint-plugin-kirklin: 0.2.1_hsf322ms6xhhd4b5ne6lb74y4a
       eslint-plugin-markdown: 3.0.0_eslint@8.28.0
       eslint-plugin-n: 15.5.1_eslint@8.28.0
       eslint-plugin-no-only-tests: 3.1.0
@@ -396,13 +396,13 @@ packages:
       - typescript
     dev: true
 
-  /@kirklin/eslint-config-ts/0.2.0_hsf322ms6xhhd4b5ne6lb74y4a:
-    resolution: {integrity: sha512-RrCoE9f42AxXBlgNgHK0IOcT1wCQMXzRElQGsEyknl45THp9XzwXwipBhCuhQwf1/atq26ug8rtviKCqAHupyw==}
+  /@kirklin/eslint-config-ts/0.2.1_hsf322ms6xhhd4b5ne6lb74y4a:
+    resolution: {integrity: sha512-8H7ejZTs8Qz8fSquR9Wk+xAsRNFZFk73cOGC81aZSg4ZeXKsO0JIpleYR1UatKvVi/BRM0DDZOz9mDoVl8QOpA==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@kirklin/eslint-config-basic': 0.2.0_czs5uoqkd3podpy6vgtsxfc7au
+      '@kirklin/eslint-config-basic': 0.2.1_czs5uoqkd3podpy6vgtsxfc7au
       '@typescript-eslint/eslint-plugin': 5.45.0_czs5uoqkd3podpy6vgtsxfc7au
       '@typescript-eslint/parser': 5.45.0_hsf322ms6xhhd4b5ne6lb74y4a
       eslint: 8.28.0
@@ -413,13 +413,13 @@ packages:
       - supports-color
     dev: true
 
-  /@kirklin/eslint-config-vue/0.2.0_czs5uoqkd3podpy6vgtsxfc7au:
-    resolution: {integrity: sha512-7p5MH6gUc3yvUNF6VBxBudhEOMWj3jbpqjSjzvMhL2UOs9fazUejnc2Fu7J+x50madLSArUWIfGR+K3/Nq3V1g==}
+  /@kirklin/eslint-config-vue/0.2.1_czs5uoqkd3podpy6vgtsxfc7au:
+    resolution: {integrity: sha512-ga44qsChNk+awDAuRABLEp9xnclQ+Y7Z6z0SjYrFB7H7hy96nB3WDCtj3On/wEpNRUjo2dZKIhs75ZzVbqGnVQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@kirklin/eslint-config-basic': 0.2.0_czs5uoqkd3podpy6vgtsxfc7au
-      '@kirklin/eslint-config-ts': 0.2.0_hsf322ms6xhhd4b5ne6lb74y4a
+      '@kirklin/eslint-config-basic': 0.2.1_czs5uoqkd3podpy6vgtsxfc7au
+      '@kirklin/eslint-config-ts': 0.2.1_hsf322ms6xhhd4b5ne6lb74y4a
       eslint: 8.28.0
       eslint-plugin-vue: 9.8.0_eslint@8.28.0
       local-pkg: 0.4.2
@@ -431,12 +431,12 @@ packages:
       - typescript
     dev: true
 
-  /@kirklin/eslint-config/0.2.0_hsf322ms6xhhd4b5ne6lb74y4a:
-    resolution: {integrity: sha512-NAy9PnCd9V0R0O4mmRPCAtJ8qtjkiu9I9WoddH5D+k4lvYTakZINAhLs6oM+918mO0LS7lFb3vtXQP21jqChGw==}
+  /@kirklin/eslint-config/0.2.1_hsf322ms6xhhd4b5ne6lb74y4a:
+    resolution: {integrity: sha512-CI7RxxH/7QS1pFQZ3QTC8/2Qglyn/onx8ef6Ety7qRKXtXZUFBcKWM4i/PEzYQ4paM8WNFVcwYyUjqFO8rOmIA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@kirklin/eslint-config-vue': 0.2.0_czs5uoqkd3podpy6vgtsxfc7au
+      '@kirklin/eslint-config-vue': 0.2.1_czs5uoqkd3podpy6vgtsxfc7au
       '@typescript-eslint/eslint-plugin': 5.45.0_czs5uoqkd3podpy6vgtsxfc7au
       '@typescript-eslint/parser': 5.45.0_hsf322ms6xhhd4b5ne6lb74y4a
       eslint: 8.28.0
@@ -1939,8 +1939,8 @@ packages:
       natural-compare: 1.4.0
     dev: true
 
-  /eslint-plugin-kirklin/0.2.0_hsf322ms6xhhd4b5ne6lb74y4a:
-    resolution: {integrity: sha512-y+zgW/wxBA9gQNxB3Sno/iwNCk1Pec1nBR0wzhKpX3Kbwg6WRURSjIKmTj2E2kyeuNanjGUM7l6xwGi2z4+QyA==}
+  /eslint-plugin-kirklin/0.2.1_hsf322ms6xhhd4b5ne6lb74y4a:
+    resolution: {integrity: sha512-8GSLOx15h5xSjW2yEfCj3dmvq8HwQXcUS+kaoYyY8ySltCnJNXBgFxPoQqw+AL7aDBC7NHJrzeXLX+Z34i5uQg==}
     dependencies:
       '@typescript-eslint/utils': 5.45.0_hsf322ms6xhhd4b5ne6lb74y4a
     transitivePeerDependencies:
