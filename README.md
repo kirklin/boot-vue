@@ -25,6 +25,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
 - 🌼 [Daisy](https://daisyui.com/) - The free and open-source Tailwind CSS component library
 - 📜 [Chinese font preset]()
+- ☁️ Deploy on Netlify, zero-config
 
 ### First-party plugins needed for Tailwind UI:
 
