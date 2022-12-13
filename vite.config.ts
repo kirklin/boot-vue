@@ -3,6 +3,8 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
+import Icons from "unplugin-icons/vite";
+import IconsResolver from "unplugin-icons/resolver";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +22,14 @@ export default defineConfig({
       // Reactivity Transform
       reactivityTransform: true,
     }),
-
+    Icons({
+      scale: 1.5, // Scale of icons against 1em
+      defaultStyle: "", // Style apply to icons
+      defaultClass: "inline-block h-5 w-5 stroke-current md:h-6 md:w-6", // Class names apply to icons
+      compiler: "vue3", // "vue2", "vue3", "jsx"
+      jsx: "react", // "react" or "preact"
+      autoInstall: true,
+    }),
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
@@ -45,6 +54,9 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/],
       dts: "types/components.d.ts",
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+      resolvers: [
+        IconsResolver(),
+      ],
     }),
   ],
   resolve: {
