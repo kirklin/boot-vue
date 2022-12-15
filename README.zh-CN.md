@@ -122,3 +122,23 @@ pnpm run build
 ```
 
 然后你会看到用于发布的 `dist` 文件夹被生成。
+
+
+### 部署到 Netlify
+
+前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建.
+
+### Docker Production Build
+
+首先，在项目的根目录下打开终端，构建vite-boot镜像。
+
+```bash
+docker buildx build . -t viteboot:latest
+```
+
+运行镜像，用 "-p" 指定端口映射。
+
+```bash
+docker run --rm -it -p 8080:80 viteboot:latest
+```
+
