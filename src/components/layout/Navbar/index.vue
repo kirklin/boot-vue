@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ThemeChange from "./components/ThemeChange.vue";
+import ThemeChange from "./components/ThemeChange/index.vue";
 </script>
 
 <template>

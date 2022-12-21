@@ -26,7 +26,6 @@ specifiers:
   pnpm: ^7.18.2
   postcss: ^8.4.20
   tailwindcss: ^3.2.4
-  theme-change: ^2.2.0
   typescript: ^4.9.4
   unplugin-auto-import: ^0.12.1
   unplugin-icons: ^0.14.15
@@ -41,7 +40,6 @@ dependencies:
   daisyui: 2.46.0_r4gnkvssmvyxmi2wmat5xbx36a
   nprogress: 0.2.0
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
-  theme-change: 2.2.0
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -4002,10 +4000,6 @@ packages:
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
-
-  /theme-change/2.2.0:
-    resolution: {integrity: sha512-vvgZEEfmH3yZGq2bWHyzs2AOG1SRfNnCvWbEnPzGpdvvCmAWtOsEdg4H6k/OMapegG+LEQvQ76tQoN9B+FT7rg==}
-    dev: false
 
   /through/2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
