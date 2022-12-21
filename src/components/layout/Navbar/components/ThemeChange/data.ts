@@ -1,4 +1,6 @@
-export const themeList = [
+import type { ThemeList } from "~/components/layout/Navbar/components/ThemeChange/types";
+
+export const themeList: ThemeList[] = [
   {
     name: "🌝 light",
     id: "light",

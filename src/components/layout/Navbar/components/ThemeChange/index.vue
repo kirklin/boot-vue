@@ -1,7 +1,38 @@
 <script setup lang="ts">
 import { themeList } from "./data";
-const mode = useColorMode({
+import type { CustomTheme } from "~/components/layout/Navbar/components/ThemeChange/types";
+
+const mode = useColorMode<CustomTheme>({
   attribute: "data-theme",
+  modes: {
+    cupcake: "cupcake",
+    bumblebee: "bumblebee",
+    emerald: "emerald",
+    corporate: "corporate",
+    synthwave: "synthwave",
+    retro: "retro",
+    cyberpunk: "cyberpunk",
+    valentine: "valentine",
+    halloween: "halloween",
+    garden: "garden",
+    forest: "forest",
+    aqua: "aqua",
+    lofi: "lofi",
+    pastel: "pastel",
+    fantasy: "fantasy",
+    wireframe: "wireframe",
+    black: "black",
+    luxury: "luxury",
+    dracula: "dracula",
+    cmyk: "cmyk",
+    autumn: "autumn",
+    business: "business",
+    acid: "acid",
+    lemonade: "lemonade",
+    night: "night",
+    coffee: "coffee",
+    winter: "winter",
+  },
 });
 </script>
 
@@ -19,7 +50,8 @@ const mode = useColorMode({
         <div
           v-for="theme in themeList"
           :key="theme.id"
-          class="overflow-hidden rounded-lg "
+          class="overflow-hidden rounded-lg outline-2 outline-offset-2 outline-base-content hover:outline"
+          :class="mode === theme.id ? 'outline' : ''"
           @click="mode = theme.id"
         >
           <div
