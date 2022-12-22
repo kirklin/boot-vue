@@ -15,6 +15,7 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
+      "vitest",
       "vite/client",
       "unplugin-icons/types/vue"
     ],
