@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ThemeChange from "./components/ThemeChange/index.vue";
+import LocalesChange from "./components/LocalesChange/index.vue";
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import ThemeChange from "./components/ThemeChange/index.vue";
       </div>
       <div>
         <ThemeChange />
+        <LocalesChange />
         <span
           class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
           data-tip="GitHub"

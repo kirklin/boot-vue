@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import { themeList } from "./data";
 import type { CustomTheme } from "~/components/layout/Navbar/components/ThemeChange/types";
-
+const { t } = useI18n();
 const mode = useColorMode<CustomTheme>({
   attribute: "data-theme",
   modes: {
@@ -40,7 +41,7 @@ const mode = useColorMode<CustomTheme>({
   <div title="Change Theme" class="dropdown-end dropdown">
     <div tabindex="0" class="btn-ghost btn gap-1 normal-case">
       <ITablerColorSwatch />
-      <span class="hidden md:inline">Theme</span>
+      <span class="hidden md:inline">{{ t("Themes") }}</span>
       <ITablerChevronDown />
     </div>
     <div

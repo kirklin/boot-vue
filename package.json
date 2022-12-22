@@ -29,6 +29,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
@@ -37,6 +38,7 @@
     "@iconify-json/carbon": "^1.1.11",
     "@iconify-json/mdi": "^1.1.39",
     "@iconify-json/tabler": "^1.1.52",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@kirklin/eslint-config": "^0.2.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",

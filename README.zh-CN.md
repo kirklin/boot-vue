@@ -21,6 +21,7 @@
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 - 🌼 [Daisy](https://daisyui.com/) - 开源的 Tailwind CSS 组件库
 - 📜 [中文字体font-family常用预设]() 
+- 🌍 [I18n 国际化开箱即用](./src/locales)
 - ☁️ 零配置部署 Netlify
 
 ### 集成 Tailwind 插件:
