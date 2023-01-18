@@ -70,8 +70,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   ├── assets               # static resource
 │   │   └── logo.png
 │   ├── components           # global component
-│   │   └── Navbar.vue       # Navbar component
-│   ├── env.d.ts
 │   ├── main.ts
 │   ├── router               # Vue router
 │   │   └── index.ts
@@ -80,16 +78,17 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   │   ├── counter.ts
 │   │   └── index.ts
 │   ├── styles               # global style
-│   │   ├── main.scss
-│   │   ├── nprogress.scss   # nprogress style
+│   │   ├── main.css
+│   │   ├── nprogress.css   # nprogress style
 │   │   ├── tailwind.css
-│   │   └── variables.scss
+│   │   └── variables.css
 │   ├── utils                # global public method
 │   │   └── darkMode.ts
 │   └── views                # all pages
 │       └── Index.vue
 ├── tailwind.config.js       # tailwind configuration
 ├── tsconfig.json            # TS compilation configuration
+├── Dockerfile               # Docker configuration
 └── vite.config.ts           # Vite configuration
 
 ```

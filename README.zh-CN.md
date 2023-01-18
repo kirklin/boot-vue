@@ -66,8 +66,6 @@
 │   ├── assets               # 静态资源
 │   │   └── logo.png
 │   ├── components           # 全局组件
-│   │   └── Navbar.vue       # 顶部导航栏组件
-│   ├── env.d.ts
 │   ├── main.ts              # 入口文件
 │   ├── router               # Vue router
 │   │   └── index.ts
@@ -76,16 +74,17 @@
 │   │   ├── counter.ts
 │   │   └── index.ts
 │   ├── styles               # 全局样式
-│   │   ├── main.scss
-│   │   ├── nprogress.scss   # nprogress 样式（顶部加载样式）
+│   │   ├── main.css
+│   │   ├── nprogress.css   # nprogress 样式（顶部加载样式）
 │   │   ├── tailwind.css     # tailwind 样式
-│   │   └── variables.scss   # SCSS全局变量
+│   │   └── variables.css   # SCSS全局变量
 │   ├── utils                # 项目公共方法
 │   │   └── darkMode.ts
 │   └── views                # 所有页面
 │       └── Index.vue        # APP首页
 ├── tailwind.config.js       # tailwind 配置文件
 ├── tsconfig.json            # TS 编译配置
+├── Dockerfile               # Docker 打包配置
 └── vite.config.ts           # Vite 配置文件
 
 ```
