@@ -62,7 +62,7 @@ function _log(
     argsToPass.push(args);
   }
 
-  const editorLabelText = import.meta.env.VITE_GLOB_APP_TITLE;
+  const editorLabelText = String(import.meta.env.VITE_GLOB_APP_TITLE);
   const editorLabelStyle = `line-height: 1em;
             color: #006FEA;
             display: inline-block;
