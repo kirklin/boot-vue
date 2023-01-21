@@ -7,10 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Components: typeof import('./../src/components/layout/Navbar/components/index.vue')['default']
     Footer: typeof import('./../src/components/layout/Footer/index.vue')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
-    ITablerBrandGithub: typeof import('~icons/tabler/brand-github')['default']
     ITablerChevronDown: typeof import('~icons/tabler/chevron-down')['default']
     ITablerColorSwatch: typeof import('~icons/tabler/color-swatch')['default']
     ITablerLanguage: typeof import('~icons/tabler/language')['default']

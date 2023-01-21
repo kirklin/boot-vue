@@ -1,4 +1,4 @@
-import path from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Components from "unplugin-vue-components/vite";
@@ -66,13 +66,12 @@ export default defineConfig({
       runtimeOnly: true,
       compositionOnly: true,
       fullInstall: true,
-      include: [path.resolve(__dirname, "src/locales/**")],
+      include: [resolve(__dirname, "src/locales/**")],
     }),
   ],
   resolve: {
     alias: {
-      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      "~/": `${path.resolve(__dirname, "src")}/`,
+      "~/": `${resolve(__dirname, "src")}/`,
     },
   },
   css: {
