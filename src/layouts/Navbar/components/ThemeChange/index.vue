@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { themeList } from "./data";
-import type { CustomTheme } from "~/components/layout/Navbar/components/ThemeChange/types";
+import type { CustomTheme } from "~/layouts/Navbar/components/ThemeChange/types";
 const { t } = useI18n();
 const mode = useColorMode<CustomTheme>({
   attribute: "data-theme",

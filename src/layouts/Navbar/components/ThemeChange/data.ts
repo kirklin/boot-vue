@@ -1,4 +1,4 @@
-import type { ThemeList } from "~/components/layout/Navbar/components/ThemeChange/types";
+import type { ThemeList } from "~/layouts/Navbar/components/ThemeChange/types";
 
 export const themeList: ThemeList[] = [
   {
