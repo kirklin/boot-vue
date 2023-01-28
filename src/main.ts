@@ -9,8 +9,11 @@ import { router } from "./router";
 import { registerStore } from "./store";
 import App from "~/App.vue";
 
-import "~/styles/tailwind.css";
+// reset css
+import "@kirklin/reset-css/kirklin.css";
+import "@kidonng/daisyui/index.css";
 import "~/styles/main.css";
+import "uno.css";
 
 const app = createApp(App);
 const messages = Object.fromEntries(
