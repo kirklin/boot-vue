@@ -9,7 +9,7 @@ import LocalesChange from "./components/LocalesChange/index.vue";
   >
     <nav class="navbar w-full">
       <div class="flex flex-1 md:gap-1 lg:gap-2">
-        <router-link
+        <RouterLink
           to="/"
           aria-current="page"
           aria-label="Homepage"
@@ -21,7 +21,7 @@ import LocalesChange from "./components/LocalesChange/index.vue";
             <span class="text-accent">V<span class="lowercase">ite</span></span>
             <span class="text-base-content">B<span class="lowercase">oot</span></span>
           </div>
-        </router-link>
+        </RouterLink>
       </div>
       <div>
         <ThemeChange />

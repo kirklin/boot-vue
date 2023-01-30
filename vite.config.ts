@@ -7,7 +7,7 @@ import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
-
+import UnoCss from "unocss/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
@@ -68,6 +68,13 @@ export default defineConfig({
       fullInstall: true,
       include: [resolve(__dirname, "src/locales/**")],
     }),
+    // https://github.com/unocss/unocss
+    // see unocss.config.ts for config
+    UnoCss(
+      {
+        configFile: resolve(__dirname, "src/config/unocss/index.ts"),
+      },
+    ),
   ],
   resolve: {
     alias: {
