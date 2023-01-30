@@ -8,6 +8,7 @@ specifiers:
   '@intlify/unplugin-vue-i18n': ^0.8.1
   '@kidonng/daisyui': ^2.31.0
   '@kirklin/eslint-config': ^0.2.5
+  '@kirklin/logger': ^0.0.1
   '@kirklin/reset-css': ^0.0.3
   '@types/node': ^18.11.18
   '@types/nprogress': ^0.2.0
@@ -38,6 +39,7 @@ specifiers:
 
 dependencies:
   '@kidonng/daisyui': 2.31.0
+  '@kirklin/logger': 0.0.1
   '@kirklin/reset-css': 0.0.3
   '@vueuse/core': 9.12.0_vue@3.2.45
   nprogress: 0.2.0
@@ -997,6 +999,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@kirklin/logger/0.0.1:
+    resolution: {integrity: sha512-RSnBSl0U/xQwzRDu5nxW7fjZs052gjJrd6Ov28WXM3Wku0R6veaIOz0XAQg7TawZiTDgJsz+QysPQd/kJQ+RMQ==}
+    dev: false
 
   /@kirklin/reset-css/0.0.3:
     resolution: {integrity: sha512-EUfxCc0U8iIn4hwhtsOha6uYKul839pyol4Yt5FJtLT8BH/F9MLMkik6KkKHhvInk8nVu4flSsFBGn/OZuu74g==}
