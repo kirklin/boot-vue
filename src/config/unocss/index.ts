@@ -7,7 +7,7 @@ export default defineConfig({
     presetAttributify(),
     presetChinese(),
     presetIcons({
-      scale: 1.2,
+      scale: 1.5,
       warn: true,
     }),
     presetDaisy(),

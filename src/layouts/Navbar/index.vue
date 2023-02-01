@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ThemeChange from "./components/ThemeChange/index.vue";
 import LocalesChange from "./components/LocalesChange/index.vue";
+import UnoCSSIconButton from "~/components/Icon/UnoCSSIconButton.vue";
 </script>
 
 <template>
@@ -37,7 +38,7 @@ import LocalesChange from "./components/LocalesChange/index.vue";
               href="https://github.com/kirklin/vite-boot"
               class="btn-ghost drawer-button btn-square btn normal-case"
             >
-              <IMdiGithub />
+              <UnoCSSIconButton icon="i-mdi-github" />
             </a>
           </span>
         </span>
