@@ -41,4 +41,3 @@ jobs:
 
       - name: Type check
         run: pnpm run typecheck
-
