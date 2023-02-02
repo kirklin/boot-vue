@@ -8,6 +8,7 @@ specifiers:
   '@iconify-json/tabler': ^1.1.57
   '@intlify/unplugin-vue-i18n': ^0.8.1
   '@kirklin/eslint-config': ^0.2.5
+  '@kirklin/logger': ^0.0.1
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
@@ -43,6 +44,7 @@ specifiers:
   vue-tsc: ^1.0.24
 
 dependencies:
+  '@kirklin/logger': 0.0.1
   '@vueuse/core': 9.12.0_vue@3.2.45
   daisyui: 2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   nprogress: 0.2.0
@@ -1016,6 +1018,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@kirklin/logger/0.0.1:
+    resolution: {integrity: sha512-RSnBSl0U/xQwzRDu5nxW7fjZs052gjJrd6Ov28WXM3Wku0R6veaIOz0XAQg7TawZiTDgJsz+QysPQd/kJQ+RMQ==}
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}

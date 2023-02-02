@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { logLabeled } from "./utils/logger";
-logLabeled("I'm ready!  ⸜(๑'ᵕ'๑)⸝⋆*", "log", "", "color: #66ccff");
+import { logger } from "@kirklin/logger";
+logger.info("I'm ready!  ⸜(๑'ᵕ'๑)⸝⋆*");
 </script>
 
 <template>
