@@ -9,6 +9,7 @@ import { router } from "./router";
 import { registerStore } from "./store";
 import App from "~/App.vue";
 
+import "@kirklin/reset-css/kirklin.css";
 import "~/styles/tailwind.css";
 import "~/styles/main.css";
 

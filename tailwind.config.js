@@ -98,6 +98,9 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("daisyui"),
   ],
+  corePlugins: {
+    preflight: false,
+  },
   // daisyUI config (optional)
   daisyui: {
     styled: true,

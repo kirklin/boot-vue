@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@kirklin/logger": "^0.0.1",
+    "@kirklin/reset-css": "^0.0.3",
     "@vueuse/core": "^9.13.0",
     "daisyui": "^2.50.2",
     "nprogress": "^0.2.0",

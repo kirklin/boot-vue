@@ -9,6 +9,7 @@ specifiers:
   '@intlify/unplugin-vue-i18n': ^0.8.2
   '@kirklin/eslint-config': ^0.2.6
   '@kirklin/logger': ^0.0.1
+  '@kirklin/reset-css': ^0.0.3
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
@@ -48,6 +49,7 @@ specifiers:
 
 dependencies:
   '@kirklin/logger': 0.0.1
+  '@kirklin/reset-css': 0.0.3
   '@vueuse/core': 9.13.0_vue@3.2.47
   daisyui: 2.50.2_gbtt6ss3tbiz4yjtvdr6fbrj44
   nprogress: 0.2.0
@@ -1348,6 +1350,10 @@ packages:
 
   /@kirklin/logger/0.0.1:
     resolution: {integrity: sha512-RSnBSl0U/xQwzRDu5nxW7fjZs052gjJrd6Ov28WXM3Wku0R6veaIOz0XAQg7TawZiTDgJsz+QysPQd/kJQ+RMQ==}
+    dev: false
+
+  /@kirklin/reset-css/0.0.3:
+    resolution: {integrity: sha512-EUfxCc0U8iIn4hwhtsOha6uYKul839pyol4Yt5FJtLT8BH/F9MLMkik6KkKHhvInk8nVu4flSsFBGn/OZuu74g==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
