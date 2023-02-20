@@ -13,7 +13,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
+- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
 - 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
 - 🤙🏻 [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) enabled
