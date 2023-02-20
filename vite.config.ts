@@ -1,12 +1,14 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import Vue from "@vitejs/plugin-vue";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
-// vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
+import Inspect from "vite-plugin-inspect";
+import Inspector from "vite-plugin-vue-inspector";
+import VueMacros from "unplugin-vue-macros/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,11 +20,15 @@ export default defineConfig({
     proxy: {},
   },
   plugins: [
-    vue({
-      // https://vuejs.org/guide/extras/reactivity-transform.html
-      // 开启响应性语法糖 （试验性特性）
-      // Reactivity Transform
-      reactivityTransform: true,
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          // https://vuejs.org/guide/extras/reactivity-transform.html
+          // 开启响应性语法糖 （试验性特性）
+          // Reactivity Transform
+          reactivityTransform: true,
+        }),
+      },
     }),
     Icons({
       scale: 1.5, // Scale of icons against 1em
@@ -68,6 +74,16 @@ export default defineConfig({
       fullInstall: true,
       include: [resolve(__dirname, "src/locales/**")],
     }),
+
+    // https://github.com/antfu/vite-plugin-inspect
+    // Visit http://localhost:3333/__inspect/ to see the inspector
+    Inspect(),
+
+    // https://github.com/webfansplz/vite-plugin-vue-inspector
+    Inspector({
+      toggleButtonVisibility: "never",
+    }),
+
   ],
   resolve: {
     alias: {
