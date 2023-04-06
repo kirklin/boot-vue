@@ -13,20 +13,20 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - born with fastness
-- 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
-- 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
+- ⚡  [Lightning fast](https://github.com/kirklin/vite-boot#readme): Built with Vue 3, Vite, and pnpm 🔥
+- 💪 [Strongly typed](https://www.typescriptlang.org/): Uses TypeScript 💻
+- 🔥 [Latest syntax](https://github.com/vuejs/rfcs/pull/227): Uses the new <script setup> syntax 🆕
 - 🤙🏻 [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) enabled
-- 📦 [Components auto importing](./src/components)
-- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-- 💡 [Vue Router v4](https://router.vuejs.org/zh/) - The official router for Vue.js
-- 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - Rapidly build modern websites without ever leaving your HTML.
-- 🎉 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
-- 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
+- 📦 [Components auto importing](./src/components): Automatically imports components 🚚
+- 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import): Uses unplugin-auto-import to directly import Composition API and others 📨
+- 🎨 [UnoCSS](https://unocss.dev/) - The instant on-demand atomic CSS engine, providing a lightweight and fast way to style your app.
 - 🌼 [Daisy](https://daisyui.com/) - The free and open-source Tailwind CSS component library
-- 📜 [Chinese font preset]()
-- 🌍 [I18n ready](./src/locales)
-- ☁️ Deploy on Netlify, zero-config
+- 💡 [Official router](https://router.vuejs.org/): Uses Vue Router v4 🛣️
+- 🎉 [Loading feedback](https://github.com/rstacruz/nprogress): Uses NProgress to provide page loading progress feedback 🔄
+- 🍍 [State management](https://pinia.esm.dev/): Uses Pinia for state management 🗃️
+- 📜 [Chinese font preset](https://github.com/kirklin/unocss-preset-chinese): Includes a preset for Chinese fonts 🇨🇳
+- 🌍 [I18n ready](./src/locales): Ready for internationalization with locales 🌎
+- ☁️ [Netlify ready](https://www.netlify.com/): Zero-config deployment on Netlify ☁️
 
 ### Coding Style
 
@@ -34,8 +34,9 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ### Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/)
-- [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- 🌪️ [WebStorm](https://www.jetbrains.com/webstorm/)
+- 💻 [VSCode](https://code.visualstudio.com/)
+- 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### Performance
 <img src='README.assets/ViteBoot-Lighthouse.png' alt='Vite-Boot Outstanding performance' width='1851'/>

@@ -9,20 +9,20 @@
 
 ## 特性
 
-- ⚡  [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/) - 为速度而生
-- 💪 [Typescript](https://www.typescriptlang.org/) - 强大的类型检查
-- 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- 🤙🏻 默认开启 [响应性语法糖](https://vuejs.org/guide/extras/reactivity-transform.html)
-- 📦 [组件自动化加载](./src/components)
-- 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
-- 💡 [Vue Router v4](https://router.vuejs.org/zh/) - Vue 路由系统
-- 🎨 [Tailwind CSS v3](https://tailwindcss.com/docs/configuration) - 快速建立现代网站，而不必离开 HTML。
-- 🎉 [NProgress](https://github.com/rstacruz/nprogress) - 页面加载进度反馈
-- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
-- 🌼 [Daisy](https://daisyui.com/) - 开源的 Tailwind CSS 组件库
-- 📜 [中文字体font-family常用预设]() 
-- 🌍 [I18n 国际化开箱即用](./src/locales)
-- ☁️ 零配置部署 Netlify
+- ⚡ [闪电般的速度](https://github.com/kirklin/vite-boot#readme)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
+- 💪 [强类型](https://www.typescriptlang.org/)：使用 TypeScript 💻
+- 🔥 [最新语法](https://github.com/vuejs/rfcs/pull/227)：使用新的 <script setup> 语法 🆕
+- 🤙🏻 启用[响应式转换](https://vuejs.org/guide/extras/reactivity-transform.html)
+- 📦 [自动导入组件](https://chat.openai.com/chat/src/components)：自动导入组件 🚚
+- 📥 [自动导入 API](https://github.com/antfu/unplugin-auto-import)：使用 unplugin-auto-import 直接导入 Composition API 和其他 API 📨
+- 🎨 [UnoCSS](https://unocss.dev/) - 瞬间响应式 CSS 引擎，提供轻量级和快速的样式应用方式。
+- 🌼 [Daisy](https://daisyui.com/) - 免费开源的 Tailwind CSS 组件库
+- 💡 [官方路由器](https://router.vuejs.org/)：使用 Vue Router v4 🛣️
+- 🎉 [加载反馈](https://github.com/rstacruz/nprogress)：使用 NProgress 提供页面加载进度反馈 🔄
+- 🍍 [状态管理](https://pinia.esm.dev/)：使用 Pinia 进行状态管理 🗃️
+- 📜 [中文字体预设](https://github.com/kirklin/unocss-preset-chinese)：包含中文字体预设 🇨🇳
+- 🌍 [国际化就绪](https://chat.openai.com/chat/src/locales)：使用本地化准备好国际化 🌎
+- ☁️ [Netlify 就绪](https://www.netlify.com/)：可在 Netlify 上零配置部署 ☁️
 
 ### 编码风格
 
@@ -30,8 +30,9 @@
 
 ### 推荐的 IDE 设置
 
-- [VSCode](https://code.visualstudio.com/)
-- [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- 🌪️ [WebStorm](https://www.jetbrains.com/webstorm/)
+- 💻 [VSCode](https://code.visualstudio.com/)
+- 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### 性能
 <img src='README.assets/ViteBoot-Lighthouse.png' alt='Vite-Boot Outstanding performance' width='1851'/>
