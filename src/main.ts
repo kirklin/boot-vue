@@ -11,7 +11,6 @@ import App from "~/App.vue";
 
 // reset css
 import "@kirklin/reset-css/kirklin.css";
-import "@kidonng/daisyui/index.css";
 import "~/styles/main.css";
 import "uno.css";
 
