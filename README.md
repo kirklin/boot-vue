@@ -28,13 +28,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - 🌍 [I18n ready](./src/locales)
 - ☁️ Deploy on Netlify, zero-config
 
-### First-party plugins needed for Tailwind UI:
-
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
-
 ### Coding Style
 
 - [@kirklin/eslint-config](https://github.com/kirklin/eslint-config)

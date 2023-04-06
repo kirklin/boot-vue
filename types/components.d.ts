@@ -9,11 +9,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    IMdiGithub: typeof import('~icons/mdi/github')['default']
-    ITablerChevronDown: typeof import('~icons/tabler/chevron-down')['default']
-    ITablerColorSwatch: typeof import('~icons/tabler/color-swatch')['default']
-    ITablerLanguage: typeof import('~icons/tabler/language')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UnoCSSIconButton: typeof import('./../src/components/Icon/UnoCSSIconButton.vue')['default']
   }
 }

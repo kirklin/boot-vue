@@ -24,13 +24,6 @@
 - 🌍 [I18n 国际化开箱即用](./src/locales)
 - ☁️ 零配置部署 Netlify
 
-### 集成 Tailwind 插件:
-
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
-
 ### 编码风格
 
 - [@kirklin/eslint-config](https://github.com/kirklin/eslint-config)
