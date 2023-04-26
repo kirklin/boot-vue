@@ -7,6 +7,7 @@ import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Inspect from "vite-plugin-inspect";
 import Inspector from "vite-plugin-vue-inspector";
+// @ts-expect-error failed to resolve types
 import VueMacros from "unplugin-vue-macros/vite";
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
