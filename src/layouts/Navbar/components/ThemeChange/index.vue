@@ -35,6 +35,38 @@ const mode = useColorMode<CustomTheme>({
     winter: "winter",
   },
 });
+
+const changeTheme = (event: MouseEvent, theme: CustomTheme) => {
+  const isSameTheme = mode.value === theme;
+  const x = event.clientX;
+  const y = event.clientY;
+  const endRadius = Math.hypot(
+    Math.max(x, innerWidth - x),
+    Math.max(y, innerHeight - y),
+  );
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
+  const transition = document.startViewTransition();
+  transition.ready.then(() => {
+    const clipPath = [
+      `circle(0px at ${x}px ${y}px)`,
+      `circle(${endRadius}px at ${x}px ${y}px)`,
+    ];
+    document.documentElement.animate(
+      {
+        clipPath: isSameTheme ? [...clipPath].reverse() : clipPath,
+      },
+      {
+        duration: 500,
+        easing: "ease-in",
+        pseudoElement: isSameTheme
+          ? "::view-transition-old(root)"
+          : "::view-transition-new(root)",
+      },
+    );
+  });
+  mode.value = theme;
+};
 </script>
 
 <template>
@@ -53,7 +85,7 @@ const mode = useColorMode<CustomTheme>({
           :key="theme.id"
           class="overflow-hidden rounded-lg outline-2 outline-offset-2 outline-base-content hover:outline"
           :class="mode === theme.id ? 'outline' : ''"
-          @click="mode = theme.id"
+          @click="changeTheme($event, theme.id)"
         >
           <div
             :data-theme="theme.id"
@@ -98,5 +130,18 @@ const mode = useColorMode<CustomTheme>({
 
  .scrollbar::-webkit-scrollbar-thumb:hover {
   background: #c0a0b9;
+ }
+
+ ::view-transition-old(root),
+ ::view-transition-new(root) {
+   animation: none;
+   mix-blend-mode: normal;
+ }
+
+ ::view-transition-old(root) {
+   z-index: 999;
+ }
+ ::view-transition-new(root) {
+   z-index: 1;
  }
  </style>
