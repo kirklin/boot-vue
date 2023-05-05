@@ -55,7 +55,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 ├── node_modules
 ├── package.json
 ├── pnpm-lock.yaml
-├── postcss.config.js        # tailwind configuration
 ├── public
 │   └── favicon.ico
 ├── src
@@ -74,13 +73,11 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 │   ├── styles               # global style
 │   │   ├── main.css
 │   │   ├── nprogress.css   # nprogress style
-│   │   ├── tailwind.css
 │   │   └── variables.css
 │   ├── utils                # global public method
 │   │   └── darkMode.ts
 │   └── views                # all pages
 │       └── Index.vue
-├── tailwind.config.js       # tailwind configuration
 ├── tsconfig.json            # TS compilation configuration
 ├── Dockerfile               # Docker configuration
 └── vite.config.ts           # Vite configuration

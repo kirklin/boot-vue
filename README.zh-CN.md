@@ -51,7 +51,6 @@
 ├── node_modules
 ├── package.json
 ├── pnpm-lock.yaml
-├── postcss.config.js        # tailwind 相关配置
 ├── public
 │   └── favicon.ico
 ├── src
@@ -70,13 +69,11 @@
 │   ├── styles               # 全局样式
 │   │   ├── main.css
 │   │   ├── nprogress.css   # nprogress 样式（顶部加载样式）
-│   │   ├── tailwind.css     # tailwind 样式
 │   │   └── variables.css   # SCSS全局变量
 │   ├── utils                # 项目公共方法
 │   │   └── darkMode.ts
 │   └── views                # 所有页面
 │       └── Index.vue        # APP首页
-├── tailwind.config.js       # tailwind 配置文件
 ├── tsconfig.json            # TS 编译配置
 ├── Dockerfile               # Docker 打包配置
 └── vite.config.ts           # Vite 配置文件
