@@ -24,12 +24,7 @@ export default defineConfig({
   plugins: [
     VueMacros({
       plugins: {
-        vue: Vue({
-          // https://vuejs.org/guide/extras/reactivity-transform.html
-          // 开启响应性语法糖 （试验性特性）
-          // Reactivity Transform
-          reactivityTransform: true,
-        }),
+        vue: Vue(),
       },
     }),
     Icons({

@@ -12,7 +12,6 @@
 - ⚡ [闪电般的速度](https://github.com/kirklin/vite-boot#readme)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
 - 💪 [强类型](https://www.typescriptlang.org/)：使用 TypeScript 💻
 - 🔥 [最新语法](https://github.com/vuejs/rfcs/pull/227)：使用新的 <script setup> 语法 🆕
-- 🤙🏻 启用[响应式转换](https://vuejs.org/guide/extras/reactivity-transform.html)
 - 📦 [自动导入组件](https://chat.openai.com/chat/src/components)：自动导入组件 🚚
 - 📥 [自动导入 API](https://github.com/antfu/unplugin-auto-import)：使用 unplugin-auto-import 直接导入 Composition API 和其他 API 📨
 - 🎨 [UnoCSS](https://unocss.dev/) - 瞬间响应式 CSS 引擎，提供轻量级和快速的样式应用方式。

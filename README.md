@@ -16,7 +16,6 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - ⚡  [Lightning fast](https://github.com/kirklin/vite-boot#readme): Built with Vue 3, Vite, and pnpm 🔥
 - 💪 [Strongly typed](https://www.typescriptlang.org/): Uses TypeScript 💻
 - 🔥 [Latest syntax](https://github.com/vuejs/rfcs/pull/227): Uses the new <script setup> syntax 🆕
-- 🤙🏻 [Reactivity Transform](https://vuejs.org/guide/extras/reactivity-transform.html) enabled
 - 📦 [Components auto importing](./src/components): Automatically imports components 🚚
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import): Uses unplugin-auto-import to directly import Composition API and others 📨
 - 🎨 [UnoCSS](https://unocss.dev/) - The instant on-demand atomic CSS engine, providing a lightweight and fast way to style your app.
