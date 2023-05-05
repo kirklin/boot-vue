@@ -1,5 +1,6 @@
 import { useLocalStorage } from "@vueuse/core";
 import { createApp } from "vue";
+
 // Vue Router
 import { createPinia } from "pinia";
 import { createI18n } from "vue-i18n";
