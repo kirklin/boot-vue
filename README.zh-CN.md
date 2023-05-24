@@ -41,41 +41,44 @@
 
 ```
 # vite-boot
-├── LICENSE
-├── README.assets
-│   └── vite-vue-tailwind.png
-├── README.md
-├── README.zh-CN.md
-├── index.html
-├── node_modules
-├── package.json
-├── pnpm-lock.yaml
-├── public
-│   └── favicon.ico
-├── src
-│   ├── App.vue              # 入口页面
-│   ├── api                  # api 接口
-│   ├── assets               # 静态资源
-│   │   └── logo.png
-│   ├── components           # 全局组件
-│   ├── main.ts              # 入口文件
-│   ├── router               # Vue router
-│   │   └── index.ts
-│   ├── settings.ts          # global configuration
-│   ├── store                # Pinia 状态管理
-│   │   ├── counter.ts
-│   │   └── index.ts
-│   ├── styles               # 全局样式
-│   │   ├── main.css
-│   │   ├── nprogress.css   # nprogress 样式（顶部加载样式）
-│   │   └── variables.css   # SCSS全局变量
-│   ├── utils                # 项目公共方法
-│   │   └── darkMode.ts
-│   └── views                # 所有页面
-│       └── Index.vue        # APP首页
-├── tsconfig.json            # TS 编译配置
-├── Dockerfile               # Docker 打包配置
-└── vite.config.ts           # Vite 配置文件
+├─.github                                # 存储 GitHub 相关配置文件。
+│  ├─ISSUE_TEMPLATE                       # GitHub Issue 模板
+│  └─workflows                            # GitHub Actions 相关配置文件
+├─.husky                                  # 存储 Git Hooks 相关配置文件
+│  └─_                                    # 存储 Git Hooks 执行脚本
+├─.idea                                   # 存储 IntelliJ IDEA 相关配置文件
+│  ├─codeStyles                           # 存储代码格式化规则
+│  └─inspectionProfiles                  # 存储代码检测规则
+├─.vscode                                 # 存储 VS Code 相关配置文件
+├─public                                  # 存储 Web 应用所需的静态资源
+├─README.assets                           # 存储 README.md 使用的图片等资源
+├─src                                     # 存储 Web 应用源代码
+│  ├─assets                               # 存储 Web 应用所需的静态资源
+│  ├─components                           # 存储 Web 应用的组件
+│  │  └─Icon                              # 存储表示图标的组件
+│  ├─config                               # 存储 Web 应用的配置文件
+│  │  ├─nprogress                         # 存储进度条库 NProgress 的配置文件
+│  │  └─unocss                            # 存储 UnoCSS 的配置文件
+│  ├─constant                             # 存储 Web 应用中使用到的常量值
+│  ├─layouts                              # 存储 Web 应用的布局组件
+│  │  ├─Footer                            # 存储表示页面底部的布局组件
+│  │  └─Navbar                            # 存储表示页面导航栏的布局组件
+│  │      └─components                    # 存储 Navbar 布局组件的子组件
+│  │          ├─LocalesChange             # 存储表示语言切换的子组件
+│  │          └─ThemeChange               # 存储表示主题切换的子组件
+│  ├─locales                              # 存储 Web 应用的多语言内容文件
+│  ├─router                               # 存储 Web 应用的路由配置文件
+│  │  └─routes                            # 存储 Web 应用路由的模块
+│  │      └─modules                       # 存储 Web 应用路由模块的子模块
+│  ├─store                                # 存储 Web 应用的状态管理文件
+│  ├─styles                               # 存储 Web 应用的样式文件
+│  └─views                                # 存储 Web 应用的页面组件
+│      ├─errorPages                       # 存储表示错误页面的组件
+│      └─home                             # 存储表示主页的组件
+│          └─components                   # 存储主页组件的子组件
+├─test                                    # 存储测试代码
+│  └─__snapshots__                        # 存储 Jest 快照测试的结果
+└─types                                   # 存储 TypeScript 类型声明文件
 
 ```
 

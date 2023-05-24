@@ -45,41 +45,44 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ```
 # vite-boot
-├── LICENSE
-├── README.assets
-│   └── vite-vue-tailwind.png
-├── README.md
-├── README.zh-CN.md
-├── index.html
-├── node_modules
-├── package.json
-├── pnpm-lock.yaml
-├── public
-│   └── favicon.ico
-├── src
-│   ├── App.vue
-│   ├── api                  # api interface
-│   ├── assets               # static resource
-│   │   └── logo.png
-│   ├── components           # global component
-│   ├── main.ts
-│   ├── router               # Vue router
-│   │   └── index.ts
-│   ├── settings.ts          # global configuration
-│   ├── store                # Pinia store
-│   │   ├── counter.ts
-│   │   └── index.ts
-│   ├── styles               # global style
-│   │   ├── main.css
-│   │   ├── nprogress.css   # nprogress style
-│   │   └── variables.css
-│   ├── utils                # global public method
-│   │   └── darkMode.ts
-│   └── views                # all pages
-│       └── Index.vue
-├── tsconfig.json            # TS compilation configuration
-├── Dockerfile               # Docker configuration
-└── vite.config.ts           # Vite configuration
+├─.github                                # Stores GitHub related configuration files.
+│  ├─ISSUE_TEMPLATE                       # GitHub Issue templates
+│  └─workflows                            # GitHub Actions related configuration files
+├─.husky                                  # Stores Git Hooks related configuration files
+│  └─_                                    # Stores Git Hooks execution scripts
+├─.idea                                   # Stores IntelliJ IDEA related configuration files
+│  ├─codeStyles                           # Stores code formatting rules
+│  └─inspectionProfiles                  # Stores code inspection rules
+├─.vscode                                 # Stores VS Code related configuration files
+├─public                                  # Stores static resources required by the web application
+├─README.assets                           # Stores images and other resources used by README.md
+├─src                                     # Stores the source code of the web application
+│  ├─assets                               # Stores static resources required by the web application
+│  ├─components                           # Stores the components of the web application
+│  │  └─Icon                              # Stores the components representing icons
+│  ├─config                               # Stores the configuration files of the web application
+│  │  ├─nprogress                         # Stores the configuration file of the progress bar library NProgress
+│  │  └─unocss                            # Stores the configuration file of the UnoCSS
+│  ├─constant                             # Stores the constant values used in the web application
+│  ├─layouts                              # Stores the layout components of the web application
+│  │  ├─Footer                            # Stores the layout component representing the footer of the page
+│  │  └─Navbar                            # Stores the layout component representing the navigation bar of the page
+│  │      └─components                    # Stores the child components of the Navbar layout component
+│  │          ├─LocalesChange             # Stores the child component representing language switch
+│  │          └─ThemeChange               # Stores the child component representing theme switch
+│  ├─locales                              # Stores the content files of the web application's multiple languages
+│  ├─router                               # Stores the routing configuration files of the web application
+│  │  └─routes                            # Stores the modules of the web application's routes
+│  │      └─modules                       # Stores the sub-modules of the routing modules of the web application
+│  ├─store                                # Stores the state management files of the web application
+│  ├─styles                               # Stores the style files of the web application
+│  └─views                                # Stores the page components of the web application
+│      ├─errorPages                       # Stores the components representing error pages
+│      └─home                             # Stores the components representing the homepage
+│          └─components                   # Stores the child components of the homepage components
+├─test                                    # Stores the test code
+│  └─__snapshots__                        # Stores the Jest snapshot test results
+└─types                                   # Stores the TypeScript type declaration files
 
 ```
 
