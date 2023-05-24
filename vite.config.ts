@@ -6,7 +6,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Inspect from "vite-plugin-inspect";
-import Inspector from "vite-plugin-vue-inspector";
+import VueDevTools from "vite-plugin-vue-devtools";
 
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
@@ -79,10 +79,8 @@ export default defineConfig({
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
 
-    // https://github.com/webfansplz/vite-plugin-vue-inspector
-    Inspector({
-      toggleButtonVisibility: "never",
-    }),
+    // https://github.com/webfansplz/vite-plugin-vue-devtools
+    VueDevTools(),
 
     // https://github.com/unocss/unocss
     // see unocss.config.ts for config

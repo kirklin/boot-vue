@@ -108,9 +108,9 @@ devDependencies:
   vite-plugin-inspect:
     specifier: ^0.7.26
     version: 0.7.26(vite@4.3.5)
-  vite-plugin-vue-inspector:
-    specifier: ^3.4.2
-    version: 3.4.2(vite@4.3.5)
+  vite-plugin-vue-devtools:
+    specifier: ^0.0.16
+    version: 0.0.16(vite@4.3.5)(vue@3.3.2)
   vitest:
     specifier: ^0.31.0
     version: 0.31.0(jsdom@22.0.0)
@@ -321,11 +321,6 @@ packages:
       '@babel/types': 7.21.5
     dev: true
 
-  /@babel/helper-string-parser@7.19.4:
-    resolution: {integrity: sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==}
-    engines: {node: '>=6.9.0'}
-    dev: true
-
   /@babel/helper-string-parser@7.21.5:
     resolution: {integrity: sha512-5pTUx3hAJaZIdW99sJ6ZUUgWq/Y+Hja7TowEnLNMm1VivRgZQL3vpBY3qUACVsvw+yQU6+YgfBVmcbLaZtrA1w==}
     engines: {node: '>=6.9.0'}
@@ -457,7 +452,7 @@ packages:
     resolution: {integrity: sha512-69OnhBxSSgK0OzTJai4kyPDiKTIe3j+ctaHdIGVbRahTLAT7L3R9oeXHC2aVSuGYt3cVnoAMDmOCgJ2yaiLMvg==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-string-parser': 7.19.4
+      '@babel/helper-string-parser': 7.21.5
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
@@ -1786,7 +1781,6 @@ packages:
 
   /@vue/devtools-api@6.5.0:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
-    dev: false
 
   /@vue/reactivity-transform@3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
@@ -4495,6 +4489,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /nanoid@4.0.2:
+    resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+    dev: true
+
   /natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
     dev: true
@@ -5303,6 +5303,10 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
+  /splitpanes@3.1.5:
+    resolution: {integrity: sha512-r3Mq2ITFQ5a2VXLOy4/Sb2Ptp7OfEO8YIbhVJqJXoFc9hc5nTXXkCvtVDjIGbvC0vdE7tse+xTM9BMjsszP6bw==}
+    dev: true
+
   /stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
     dev: true
@@ -5922,6 +5926,14 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
+  /vite-hot-client@0.2.1(vite@4.3.5):
+    resolution: {integrity: sha512-UqsQdw5PODnSrTDT85nr09RlhV0gkm2Xat74U2l8JZ5R8M/wTCggWSyPjxbLk5fbbVnWfr0JwW+vVoosjQnYrA==}
+    peerDependencies:
+      vite: ^2.6.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 4.3.5(@types/node@20.1.4)
+    dev: true
+
   /vite-node@0.31.0(@types/node@20.1.4):
     resolution: {integrity: sha512-8x1x1LNuPvE2vIvkSB7c1mApX5oqlgsxzHQesYF7l5n1gKrEmrClIiZuOFbFDQcjLsmcWSwwmrWrcGWm9Fxc/g==}
     engines: {node: '>=v14.18.0'}
@@ -5959,6 +5971,28 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+    dev: true
+
+  /vite-plugin-vue-devtools@0.0.16(vite@4.3.5)(vue@3.3.2):
+    resolution: {integrity: sha512-qgyfSlv4XBpfmTbiIfcofvIK5s9ObPSek6HWUzk1CJeLnUiA5fR91Cc54GxeirPA2odpir197GPgdB7VszI+eQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3.0.0-0 || ^4.0.0-0
+    dependencies:
+      '@vueuse/core': 10.1.2(vue@3.3.2)
+      nanoid: 4.0.2
+      sirv: 2.0.3
+      splitpanes: 3.1.5
+      vite: 4.3.5(@types/node@20.1.4)
+      vite-hot-client: 0.2.1(vite@4.3.5)
+      vite-plugin-inspect: 0.7.26(vite@4.3.5)
+      vite-plugin-vue-inspector: 3.4.2(vite@4.3.5)
+      vue-router: 4.2.0(vue@3.3.2)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: true
 
   /vite-plugin-vue-inspector@3.4.2(vite@4.3.5):
@@ -6129,7 +6163,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.3.2
-    dev: false
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}

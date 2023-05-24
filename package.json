@@ -64,7 +64,7 @@
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.5",
     "vite-plugin-inspect": "^0.7.26",
-    "vite-plugin-vue-inspector": "^3.4.2",
+    "vite-plugin-vue-devtools": "^0.0.16",
     "vitest": "^0.31.0",
     "vue-tsc": "^1.6.5"
   },
