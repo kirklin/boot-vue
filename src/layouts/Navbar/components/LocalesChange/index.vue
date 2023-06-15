@@ -2,6 +2,9 @@
 import { useLocalStorage } from "@vueuse/core";
 import { useI18n } from "vue-i18n";
 
+defineOptions({
+  name: "LocalesChange",
+});
 const { availableLocales, locale } = useI18n();
 const ChangeLocales = (lang: string) => {
   locale.value = lang;

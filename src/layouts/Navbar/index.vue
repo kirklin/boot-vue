@@ -2,6 +2,10 @@
 import ThemeChange from "./components/ThemeChange/index.vue";
 import LocalesChange from "./components/LocalesChange/index.vue";
 import UnoCSSIconButton from "~/components/Icon/UnoCSSIconButton.vue";
+
+defineOptions({
+  name: "Navbar",
+});
 </script>
 
 <template>

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import Avatar from "~/assets/avatar.jpg";
+
+defineOptions({
+  name: "LayoutFooter",
+});
 </script>
 
 <template>
