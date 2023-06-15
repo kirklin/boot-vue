@@ -6,6 +6,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Inspect from "vite-plugin-inspect";
+import { VitePWA } from "vite-plugin-pwa";
 import VueDevTools from "vite-plugin-vue-devtools";
 
 // vite.config.ts
@@ -73,6 +74,35 @@ export default defineConfig({
       compositionOnly: true,
       fullInstall: true,
       include: [resolve(__dirname, "src/locales/**")],
+    }),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.ico"],
+      manifest: {
+        name: "ViteBoot",
+        short_name: "ViteBoot",
+        theme_color: "#ffffff",
+        icons: [
+          {
+            src: "/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+        ],
+      },
     }),
 
     // https://github.com/antfu/vite-plugin-inspect
