@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+import { logger } from "@kirklin/logger";
 import { themeList } from "./data";
 import type { CustomTheme } from "~/layouts/Navbar/components/ThemeChange/types";
 
@@ -42,34 +43,44 @@ const mode = useColorMode<CustomTheme>({
 
 const changeTheme = (event: MouseEvent, theme: CustomTheme) => {
   const isSameTheme = mode.value === theme;
-  const x = event.clientX;
-  const y = event.clientY;
-  const endRadius = Math.hypot(
-    Math.max(x, innerWidth - x),
-    Math.max(y, innerHeight - y),
-  );
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
-  const transition = document.startViewTransition();
-  transition.ready.then(() => {
-    const clipPath = [
-      `circle(0px at ${x}px ${y}px)`,
-      `circle(${endRadius}px at ${x}px ${y}px)`,
-    ];
-    document.documentElement.animate(
-      {
-        clipPath: isSameTheme ? [...clipPath].reverse() : clipPath,
-      },
-      {
-        duration: 500,
-        easing: "ease-in",
-        pseudoElement: isSameTheme
-          ? "::view-transition-old(root)"
-          : "::view-transition-new(root)",
-      },
+  try {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    if (document.startViewTransition === undefined) {
+      throw new Error("document.startViewTransition is undefined, please update your browser to the latest version or use a modern browser.");
+    }
+    const x = event.clientX;
+    const y = event.clientY;
+    const endRadius = Math.hypot(
+      Math.max(x, innerWidth - x),
+      Math.max(y, innerHeight - y),
     );
-  });
-  mode.value = theme;
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
+    const transition = document.startViewTransition();
+    transition.ready.then(() => {
+      const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+      ];
+      document.documentElement.animate(
+        {
+          clipPath: isSameTheme ? [...clipPath].reverse() : clipPath,
+        },
+        {
+          duration: 500,
+          easing: "ease-in",
+          pseudoElement: isSameTheme
+            ? "::view-transition-old(root)"
+            : "::view-transition-new(root)",
+        },
+      );
+    });
+  } catch (error: unknown) {
+    logger.error(`Failed to change theme : ${error instanceof Error ? error.message : ""}`);
+  } finally {
+    mode.value = theme;
+  }
 };
 </script>
 
