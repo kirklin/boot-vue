@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useLocalStorage } from "@vueuse/core";
 import { useI18n } from "vue-i18n";
+import { languagesNameList } from "~/composables/langugage";
 
 defineOptions({
   name: "LocalesChange",
@@ -8,7 +9,7 @@ defineOptions({
 const { availableLocales, locale } = useI18n();
 const ChangeLocales = (lang: string) => {
   locale.value = lang;
-  const localedLang = useLocalStorage("locale", "zh-CN");
+  const localedLang = useLocalStorage("locale", "zh");
   localedLang.value = lang;
 };
 </script>
@@ -25,7 +26,7 @@ const ChangeLocales = (lang: string) => {
         <li v-for="lang in availableLocales" :key="lang">
           <button class="flex" @click="ChangeLocales(lang)">
             <span class="flex flex-1 justify-between">
-              {{ lang }}
+              {{ languagesNameList.find((item) => item.code === lang)?.nativeName }}
               <!--              <span class="badge-ghost badge badge-sm" /> -->
             </span>
           </button>

@@ -5,6 +5,7 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import { createI18n } from "vue-i18n";
 
+import messages from "@intlify/unplugin-vue-i18n/messages";
 import { router } from "./router";
 
 import { registerStore } from "./store";
@@ -16,16 +17,9 @@ import "~/styles/main.css";
 import "uno.css";
 
 const app = createApp(App);
-const messages = Object.fromEntries(
-  Object.entries(
-    import.meta.glob<{ default: any }>("./locales/*.json", { eager: true }))
-    .map(([key, value]) => {
-      return [key.slice(10, -5), value.default];
-    }),
-);
 app.use(createI18n({
   legacy: false,
-  locale: unref(useLocalStorage("locale", "zh-CN")),
+  locale: unref(useLocalStorage("locale", "zh")),
   messages,
 }));
 app.use(createPinia());

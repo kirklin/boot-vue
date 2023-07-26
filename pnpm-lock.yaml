@@ -17,6 +17,9 @@ dependencies:
   daisyui:
     specifier: ^3.2.1
     version: 3.2.1(ts-node@10.9.1)
+  iso-639-1:
+    specifier: ^2.1.15
+    version: 2.1.15
   nprogress:
     specifier: ^0.2.0
     version: 0.2.0
@@ -93,7 +96,7 @@ devDependencies:
     version: 5.1.6
   unocss:
     specifier: ^0.53.5
-    version: 0.53.5(postcss@8.4.24)(rollup@2.79.1)(vite@4.4.4)
+    version: 0.53.5(postcss@8.4.26)(rollup@2.79.1)(vite@4.4.4)
   unocss-preset-daisy:
     specifier: ^5.0.0
     version: 5.0.0(daisyui@3.2.1)(unocss@0.53.5)
@@ -2794,7 +2797,7 @@ packages:
       gzip-size: 6.0.0
       sirv: 2.0.3
 
-  /@unocss/postcss@0.53.5(postcss@8.4.24):
+  /@unocss/postcss@0.53.5(postcss@8.4.26):
     resolution: {integrity: sha512-IfZl4GxrpegP/861bp3e0X3VcQJ9/M3VxC9UQ7zzxkOz/E8R09iMpbnznVLrTiLp2r96p5k/ggXLoadFm1FxGA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2805,7 +2808,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.0
       magic-string: 0.30.1
-      postcss: 8.4.24
+      postcss: 8.4.26
 
   /@unocss/preset-attributify@0.53.5:
     resolution: {integrity: sha512-0TJD9hVUWu0T4dtdURApyFiliqbckYYGZe2PZBgUrHCypbI0zq7k3MdXFYmIuYxqDPErJVm8rO9lwMpKfTsvuA==}
@@ -5470,6 +5473,11 @@ packages:
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
+  /iso-639-1@2.1.15:
+    resolution: {integrity: sha512-7c7mBznZu2ktfvyT582E2msM+Udc1EjOyhVRE/0ZsjD9LBtWSm23h3PtiRh2a35XoUsTQQjJXaJzuLjXsOdFDg==}
+    engines: {node: '>=6.0'}
+    dev: false
+
   /istanbul-lib-coverage@3.2.0:
     resolution: {integrity: sha512-eOeJ5BHCmHYvQK7xt9GkdHuzuCGS1Y6g9Gvnx3Ym33fz/HpLRYxiS0wHNr+m/MBC8B647Xt608vCDEvhl9c6Mw==}
     engines: {node: '>=8'}
@@ -7601,7 +7609,7 @@ packages:
         optional: true
     dependencies:
       '@unocss/core': 0.50.4
-      unocss: 0.53.5(postcss@8.4.24)(rollup@2.79.1)(vite@4.4.4)
+      unocss: 0.53.5(postcss@8.4.26)(rollup@2.79.1)(vite@4.4.4)
     dev: false
 
   /unocss-preset-daisy@5.0.0(daisyui@3.2.1)(unocss@0.53.5):
@@ -7616,10 +7624,10 @@ packages:
       parsel-js: 1.1.1
       postcss: 8.4.24
       postcss-js: 4.0.1(postcss@8.4.24)
-      unocss: 0.53.5(postcss@8.4.24)(rollup@2.79.1)(vite@4.4.4)
+      unocss: 0.53.5(postcss@8.4.26)(rollup@2.79.1)(vite@4.4.4)
     dev: true
 
-  /unocss@0.53.5(postcss@8.4.24)(rollup@2.79.1)(vite@4.4.4):
+  /unocss@0.53.5(postcss@8.4.26)(rollup@2.79.1)(vite@4.4.4):
     resolution: {integrity: sha512-LXAdtzAaH8iEDWxW4t9i6TvJNw0OSrgdN+jw8rAZAWb73Nx51ZLoKPUB1rFvQMr2Li7LcsUj5hYpOrQbhhafYg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -7632,7 +7640,7 @@ packages:
       '@unocss/cli': 0.53.5(rollup@2.79.1)
       '@unocss/core': 0.53.5
       '@unocss/extractor-arbitrary-variants': 0.53.5
-      '@unocss/postcss': 0.53.5(postcss@8.4.24)
+      '@unocss/postcss': 0.53.5(postcss@8.4.26)
       '@unocss/preset-attributify': 0.53.5
       '@unocss/preset-icons': 0.53.5
       '@unocss/preset-mini': 0.53.5
