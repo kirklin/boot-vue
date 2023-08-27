@@ -114,11 +114,7 @@ export default defineConfig({
 
     // https://github.com/unocss/unocss
     // see unocss.config.ts for config
-    UnoCss(
-      {
-        configFile: resolve(__dirname, "src/config/unocss/index.ts"),
-      },
-    ),
+    UnoCss(),
   ],
   resolve: {
     alias: {
