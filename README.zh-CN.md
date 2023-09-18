@@ -1,15 +1,15 @@
 <div align='center'>
-<h1>Vite-Boot </h1>
-<img src='README.assets/logo.png' alt='Vite-Boot - Opinionated Vite Starter Template' width='344'/>
+<h1>Boot-Vue </h1>
+<img src='README.assets/logo.png' alt='Boot-Vue - Opinionated Vite Starter Template' width='344'/>
 </div>
 
 <p align='center'>
-使用Vite-Boot快速地创建 Web 应用
+使用Boot-Vue快速地创建 Web 应用
 </p>
 
 ## 特性
 
-- ⚡ [闪电般的速度](https://github.com/kirklin/vite-boot#readme)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
+- ⚡ [闪电般的速度](https://github.com/kirklin/boot-vue#readme)：使用 Vue 3、Vite 和 pnpm 构建，速度飞快 🔥
 - 💪 [强类型](https://www.typescriptlang.org/)：使用 TypeScript 💻
 - 🔥 [最新语法](https://github.com/vuejs/rfcs/pull/227)：使用新的 <script setup> 语法 🆕
 - 📦 [自动导入组件](https://chat.openai.com/chat/src/components)：自动导入组件 🚚
@@ -34,13 +34,13 @@
 - 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### 性能
-<img src='README.assets/ViteBoot-Lighthouse.png' alt='Vite-Boot Outstanding performance' width='1851'/>
+<img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
 
 ## 项目结构
 
 ```
-# vite-boot
+# boot-vue
 ├─.github                                # 存储 GitHub 相关配置文件。
 │  ├─ISSUE_TEMPLATE                       # GitHub Issue 模板
 │  └─workflows                            # GitHub Actions 相关配置文件
@@ -86,13 +86,13 @@
 
 ### GitHub 模板
 
-[使用这个模板创建仓库](https://github.com/kirklin/vite-boot/generate).
+[使用这个模板创建仓库](https://github.com/kirklin/boot-vue/generate).
 
 ### 克隆到本地
 
 ```bash
-npx degit kirklin/vite-boot my-vite-app
-cd my-vite-app
+npx degit kirklin/boot-vue my-app
+cd my-app
 pnpm i
 ```
 

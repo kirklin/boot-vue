@@ -81,8 +81,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico"],
       manifest: {
-        name: "ViteBoot",
-        short_name: "ViteBoot",
+        name: "BootVue",
+        short_name: "BootVue",
         theme_color: "#ffffff",
         icons: [
           {

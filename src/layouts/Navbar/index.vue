@@ -23,8 +23,8 @@ defineOptions({
           <div
             class="inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
           >
-            <span class="text-accent">V<span class="lowercase">ite</span></span>
-            <span class="text-base-content">B<span class="lowercase">oot</span></span>
+            <span class="text-accent">B<span class="lowercase">oot</span></span>
+            <span class="text-base-content">V<span class="lowercase">ue</span></span>
           </div>
         </RouterLink>
       </div>
@@ -39,7 +39,7 @@ defineOptions({
             <a
               aria-label="Github"
               target="_blank"
-              href="https://github.com/kirklin/vite-boot"
+              href="https://github.com/kirklin/boot-vue"
               class="btn-ghost drawer-button btn-square btn normal-case"
             >
               <UnoCSSIconButton icon="i-mdi-github" />

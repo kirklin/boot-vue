@@ -1,12 +1,12 @@
 {
-  "name": "vite-boot",
+  "name": "boot-vue",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.7.0",
-  "description": "Vite starter template with UnoCSS",
+  "description": "Vue starter template with UnoCSS",
   "keywords": [
-    "viteBoot",
-    "vite-boot",
+    "BootVue",
+    "boot-vue",
     "vite",
     "unocss",
     "fast",

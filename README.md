@@ -1,10 +1,10 @@
 <div align='center'>
-<h1>Vite-Boot </h1>
-<img src='README.assets/logo.png' alt='Vite-Boot - Opinionated Vite Starter Template' width='344'/>
+<h1>Boot-Vue </h1>
+<img src='README.assets/logo.png' alt='Boot-Vue - Opinionated Vite Starter Template' width='344'/>
 </div>
 
 <p align='center'>
-Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
+Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 </p>
 
 <div align='center'>
@@ -13,7 +13,7 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡  [Lightning fast](https://github.com/kirklin/vite-boot#readme): Built with Vue 3, Vite, and pnpm 🔥
+- ⚡  [Lightning fast](https://github.com/kirklin/boot-vue#readme): Built with Vue 3, Vite, and pnpm 🔥
 - 💪 [Strongly typed](https://www.typescriptlang.org/): Uses TypeScript 💻
 - 🔥 [Latest syntax](https://github.com/vuejs/rfcs/pull/227): Uses the new <script setup> syntax 🆕
 - 📦 [Components auto importing](./src/components): Automatically imports components 🚚
@@ -38,13 +38,13 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 - 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### Performance
-<img src='README.assets/ViteBoot-Lighthouse.png' alt='Vite-Boot Outstanding performance' width='1851'/>
+<img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
 
 ## directory
 
 ```
-# vite-boot
+# boot-vue
 ├─.github                                # Stores GitHub related configuration files.
 │  ├─ISSUE_TEMPLATE                       # GitHub Issue templates
 │  └─workflows                            # GitHub Actions related configuration files
@@ -90,13 +90,13 @@ Mocking up web app with <b>Vite-Boot </b><sup><em>(speed)</em></sup><br>
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/kirklin/vite-boot/generate).
+[Create a repo from this template on GitHub](https://github.com/kirklin/boot-vue/generate).
 
 ### Clone to local
 
 ```bash
-npx degit kirklin/vite-boot my-vite-app
-cd my-vite-app
+npx degit kirklin/boot-vue my-app
+cd my-app
 pnpm i
 ```
 
@@ -127,7 +127,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 ### Docker Production Build
 
-First, build the vite-boot image by opening the terminal in the project's root directory.
+First, build the boot-vue image by opening the terminal in the project's root directory.
 
 ```bash
 docker buildx build . -t viteboot:latest
