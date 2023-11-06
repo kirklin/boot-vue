@@ -44,6 +44,8 @@ const mode = useColorMode<CustomTheme>({
 function changeTheme(event: MouseEvent, theme: CustomTheme) {
   const isSameTheme = mode.value === theme;
   try {
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
     if (document.startViewTransition === undefined) {
       throw new Error("document.startViewTransition is undefined, please update your browser to the latest version or use a modern browser.");
     }
@@ -53,6 +55,8 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
       Math.max(x, innerWidth - x),
       Math.max(y, innerHeight - y),
     );
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
     const transition = document.startViewTransition();
     transition.ready.then(() => {
       const clipPath = [
