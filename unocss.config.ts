@@ -14,7 +14,9 @@ export default defineConfig({
       scale: 1.5,
       warn: true,
     }),
-    presetDaisy(),
+    presetDaisy({
+      themes: true,
+    }),
   ],
   transformers: [
     transformerDirectives(),
