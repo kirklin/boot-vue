@@ -41,11 +41,9 @@ const mode = useColorMode<CustomTheme>({
   },
 });
 
-const changeTheme = (event: MouseEvent, theme: CustomTheme) => {
+function changeTheme(event: MouseEvent, theme: CustomTheme) {
   const isSameTheme = mode.value === theme;
   try {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
     if (document.startViewTransition === undefined) {
       throw new Error("document.startViewTransition is undefined, please update your browser to the latest version or use a modern browser.");
     }
@@ -55,8 +53,6 @@ const changeTheme = (event: MouseEvent, theme: CustomTheme) => {
       Math.max(x, innerWidth - x),
       Math.max(y, innerHeight - y),
     );
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-expect-error
     const transition = document.startViewTransition();
     transition.ready.then(() => {
       const clipPath = [
@@ -81,24 +77,24 @@ const changeTheme = (event: MouseEvent, theme: CustomTheme) => {
   } finally {
     mode.value = theme;
   }
-};
+}
 </script>
 
 <template>
-  <div title="Change Theme" class="dropdown-end dropdown">
-    <div tabindex="0" class="btn-ghost btn gap-1 normal-case">
+  <div title="Change Theme" class="dropdown dropdown-end">
+    <div tabindex="0" class="gap-1 normal-case btn btn-ghost">
       <UnoCSSIconButton icon="i-tabler-color-swatch" />
       <span class="hidden md:inline">{{ t("Themes") }}</span>
       <UnoCSSIconButton icon="i-tabler-chevron-down" />
     </div>
     <div
-      class="scrollbar dropdown-content rounded-t-box rounded-b-box top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl"
+      class="dropdown-content scrollbar top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl rounded-t-box rounded-b-box"
     >
       <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
         <div
           v-for="theme in themeList"
           :key="theme.id"
-          class="overflow-hidden rounded-lg outline-2 outline-offset-2 outline-base-content hover:outline"
+          class="overflow-hidden rounded-lg outline-2 outline-base-content outline-offset-2 hover:outline"
           :class="mode === theme.id ? 'outline' : ''"
           @click="changeTheme($event, theme.id)"
         >

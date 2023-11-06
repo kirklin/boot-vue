@@ -12,7 +12,6 @@ export default defineConfig({
     presetEase(),
     presetIcons({
       scale: 1.5,
-      warn: true,
     }),
     presetDaisy({
       themes: true,

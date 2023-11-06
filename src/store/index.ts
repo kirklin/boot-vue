@@ -5,8 +5,8 @@ const appStore: any = {};
 /**
  * 注册app状态库
  */
-export const registerStore = () => {
+export function registerStore() {
   appStore.counter = counter();
-};
+}
 
 export default appStore;
