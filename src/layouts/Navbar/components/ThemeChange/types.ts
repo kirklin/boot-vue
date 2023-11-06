@@ -5,6 +5,6 @@ export declare type CustomTheme = "cupcake" | "bumblebee" | "emerald" | "corpora
 "lofi" | "pastel" | "fantasy" | "wireframe" | "black" | "luxury" | "dracula" | "cmyk" |
 "autumn" | "business" | "acid" | "lemonade" | "night" | "coffee" | "winter" | BasicColorSchema;
 export interface ThemeList {
-  name: string
-  id: CustomTheme
+  name: string;
+  id: CustomTheme;
 }
