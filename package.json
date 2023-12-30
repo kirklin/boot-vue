@@ -45,7 +45,7 @@
     "@iconify-json/mdi": "^1.1.63",
     "@iconify-json/tabler": "^1.1.102",
     "@intlify/unplugin-vue-i18n": "^2.0.0",
-    "@kirklin/eslint-config": "^1.1.0",
+    "@kirklin/eslint-config": "^1.1.1",
     "@types/node": "^20.10.6",
     "@types/nprogress": "^0.2.3",
     "@unocss/eslint-config": "^0.58.2",

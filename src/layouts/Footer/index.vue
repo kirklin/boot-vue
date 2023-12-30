@@ -29,7 +29,7 @@ defineOptions({
        </div>
         <div class="text-left">
           <p class="text-xs text-base-content text-opacity-50">Created by</p>
-          <h2 class="text-lg font-bold text-base-content">Kirk Lin</h2>
+          <h2 class="text-lg text-base-content font-bold">Kirk Lin</h2>
         </div>
       </a>
       <div class="flex flex-col items-center gap-4 text-left sm:flex-row">
@@ -40,8 +40,8 @@ defineOptions({
             rel="nofollow"
             class="w-[130px] flex flex-col items-center rounded bg-base-100"
           >
-            <h3 class="p-2 text-xs font-bold text-base-content/50">BootVue™</h3>
-            <p class="px-1.5 py-2 text-xs tracking-tighter text-base-content/50">
+            <h3 class="p-2 text-xs text-base-content/50 font-bold">BootVue™</h3>
+            <p class="px-1.5 py-2 text-xs text-base-content/50 tracking-tighter">
               All Rights Reserved.
             </p>
           </a>

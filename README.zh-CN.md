@@ -36,7 +36,6 @@
 ### 性能
 <img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
-
 ## 项目结构
 
 ```
@@ -116,7 +115,6 @@ pnpm run build
 
 然后你会看到用于发布的 `dist` 文件夹被生成。
 
-
 ### 部署到 Netlify
 
 前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建.
@@ -134,4 +132,3 @@ docker buildx build . -t viteboot:latest
 ```bash
 docker run --rm -it -p 8080:80 viteboot:latest
 ```
-

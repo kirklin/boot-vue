@@ -104,7 +104,7 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
         >
           <div
             :data-theme="theme.id"
-            class="w-full cursor-pointer bg-base-100 font-sans text-base-content"
+            class="w-full cursor-pointer bg-base-100 text-base-content font-sans"
           >
             <div class="grid grid-cols-5 grid-rows-3">
               <div class="col-span-5 row-span-3 row-start-1 flex gap-1 px-4 py-3">

@@ -40,7 +40,6 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 ### Performance
 <img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
-
 ## directory
 
 ```
@@ -120,7 +119,6 @@ pnpm run build
 
 And you will see the generated file in `dist` that ready to be served.
 
-
 ### Deploy on Netlify
 
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
@@ -138,4 +136,3 @@ Run the image and specify port mapping with the `-p` flag.
 ```bash
 docker run --rm -it -p 8080:80 viteboot:latest
 ```
-
