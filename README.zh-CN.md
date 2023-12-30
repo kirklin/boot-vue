@@ -34,6 +34,7 @@
 - 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### 性能
+
 <img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
 ## 项目结构

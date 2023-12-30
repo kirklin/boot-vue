@@ -130,33 +130,33 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
  .scrollbar::-webkit-scrollbar {
   width: 20px;
   height: 20px;
- }
+}
 
- .scrollbar::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track {
   border-radius: 100vh;
   background: #f7f4ed;
- }
+}
 
- .scrollbar::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
   background: #e0cbcb;
   border-radius: 100vh;
   border: 3px solid #f6f7ed;
- }
+}
 
- .scrollbar::-webkit-scrollbar-thumb:hover {
+.scrollbar::-webkit-scrollbar-thumb:hover {
   background: #c0a0b9;
- }
+}
 
- ::view-transition-old(root),
- ::view-transition-new(root) {
-   animation: none;
-   mix-blend-mode: normal;
- }
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
 
- ::view-transition-old(root) {
-   z-index: 999;
- }
- ::view-transition-new(root) {
-   z-index: 1;
- }
- </style>
+::view-transition-old(root) {
+  z-index: 999;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+</style>

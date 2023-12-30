@@ -13,7 +13,7 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 
 ## Features
 
-- ⚡  [Lightning fast](https://github.com/kirklin/boot-vue#readme): Built with Vue 3, Vite, and pnpm 🔥
+- ⚡ [Lightning fast](https://github.com/kirklin/boot-vue#readme): Built with Vue 3, Vite, and pnpm 🔥
 - 💪 [Strongly typed](https://www.typescriptlang.org/): Uses TypeScript 💻
 - 🔥 [Latest syntax](https://github.com/vuejs/rfcs/pull/227): Uses the new <script setup> syntax 🆕
 - 📦 [Components auto importing](./src/components): Automatically imports components 🚚
@@ -38,6 +38,7 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 - 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
 
 ### Performance
+
 <img src='README.assets/BootVue-Lighthouse.png' alt='Boot-Vue Outstanding performance' width='1851'/>
 
 ## directory
