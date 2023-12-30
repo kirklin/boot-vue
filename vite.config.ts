@@ -19,7 +19,6 @@ export default defineConfig({
     host: "localhost",
     port: 8888,
     open: true,
-    https: false,
     proxy: {},
   },
   plugins: [
