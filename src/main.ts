@@ -1,15 +1,15 @@
+import messages from "@intlify/unplugin-vue-i18n/messages";
 import { useLocalStorage } from "@vueuse/core";
-import { createApp } from "vue";
 
 // Vue Router
 import { createPinia } from "pinia";
+import { createApp } from "vue";
+
 import { createI18n } from "vue-i18n";
-
-import messages from "@intlify/unplugin-vue-i18n/messages";
-import { router } from "./router";
-
-import { registerStore } from "./store";
 import App from "~/App.vue";
+
+import { router } from "./router";
+import { registerStore } from "./store";
 
 // reset css
 import "@kirklin/reset-css/kirklin.css";

@@ -1,17 +1,17 @@
 import { resolve } from "node:path";
-import { defineConfig } from "vite";
-import Vue from "@vitejs/plugin-vue";
-import Components from "unplugin-vue-components/vite";
-import AutoImport from "unplugin-auto-import/vite";
-import Icons from "unplugin-icons/vite";
-import IconsResolver from "unplugin-icons/resolver";
-import Inspect from "vite-plugin-inspect";
-import { VitePWA } from "vite-plugin-pwa";
-import VueDevTools from "vite-plugin-vue-devtools";
-
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
+import Vue from "@vitejs/plugin-vue";
 import UnoCss from "unocss/vite";
+import AutoImport from "unplugin-auto-import/vite";
+import IconsResolver from "unplugin-icons/resolver";
+import Icons from "unplugin-icons/vite";
+import Components from "unplugin-vue-components/vite";
+import { defineConfig } from "vite";
+import Inspect from "vite-plugin-inspect";
+
+import { VitePWA } from "vite-plugin-pwa";
+import VueDevTools from "vite-plugin-vue-devtools";
 
 // https://vitejs.dev/config/
 export default defineConfig({

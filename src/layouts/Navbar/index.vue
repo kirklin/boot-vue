@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ThemeChange from "./components/ThemeChange/index.vue";
-import LocalesChange from "./components/LocalesChange/index.vue";
 import UnoCSSIconButton from "~/components/Icon/UnoCSSIconButton.vue";
+import LocalesChange from "./components/LocalesChange/index.vue";
+import ThemeChange from "./components/ThemeChange/index.vue";
 
 defineOptions({
   name: "Navbar",
