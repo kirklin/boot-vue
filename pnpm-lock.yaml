@@ -42,6 +42,9 @@ catalogs:
     unplugin-vue-components:
       specifier: ^28.5.0
       version: 28.5.0
+    vite-plugin-mcp:
+      specifier: ^0.1.2
+      version: 0.1.2
     vite-plugin-pwa:
       specifier: ^1.0.0
       version: 1.0.0
@@ -261,7 +264,7 @@ importers:
         specifier: ^11.0.1
         version: 11.0.1(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))
       vite-plugin-mcp:
-        specifier: ^0.1.2
+        specifier: catalog:build
         version: 0.1.2(vite@6.3.2(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))
       vite-plugin-pwa:
         specifier: catalog:build
