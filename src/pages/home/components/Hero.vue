@@ -9,14 +9,10 @@ function testStore() {
 </script>
 
 <template>
-  <div class="mt-[-4rem] min-h-screen text-primary-content hero">
-    <!--  <div class="hero min-h-screen from-primary to-secondary" style="background-image: url(https://img.js.design/assets/Resources/background/home-bg-2.png);"> -->
-    <div
-      class="place-items-center from-primary to-base-100 bg-gradient-to-bl hero-overlay"
-    />
+  <div class="bg-base-200 text-primary-content mt-[-4rem] min-h-screen hero">
     <div class="text-center hero-content">
       <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">
+        <h1 class="text-5xl font-bold mb-5">
           Boot Vue
         </h1>
         <p class="mb-5">

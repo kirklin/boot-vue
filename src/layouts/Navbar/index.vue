@@ -10,7 +10,7 @@ defineOptions({
 
 <template>
   <div
-    class="sticky top-0 z-30 h-16 w-full flex justify-center text-base-content opacity-90 backdrop-blur transition-all duration-100"
+    class="text-base-content opacity-90 flex h-16 w-full transition-all duration-100 top-0 justify-center sticky z-30 backdrop-blur"
   >
     <nav class="w-full navbar">
       <div class="flex flex-1 lg:gap-2 md:gap-1">
@@ -21,7 +21,7 @@ defineOptions({
           class="px-2 btn btn-ghost"
         >
           <div
-            class="inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
+            class="text-primary text-lg inline-flex transition-all duration-200 md:text-3xl"
           >
             <span class="text-accent">B<span class="lowercase">oot</span></span>
             <span class="text-base-content">V<span class="lowercase">ue</span></span>
@@ -40,7 +40,7 @@ defineOptions({
               aria-label="Github"
               target="_blank"
               href="https://github.com/kirklin/boot-vue"
-              class="drawer-button normal-case btn btn-square btn-ghost"
+              class="gap-1 btn btn-ghost btn-sm"
             >
               <UnoCSSIconButton icon="i-mdi-github" />
             </a>

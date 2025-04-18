@@ -117,4 +117,28 @@ export const themeList: ThemeList[] = [
     name: "❄️ Winter",
     id: "winter",
   },
+  {
+    name: "🔅 Dim",
+    id: "dim",
+  },
+  {
+    name: "❄️ Nord",
+    id: "nord",
+  },
+  {
+    name: "🌅 Sunset",
+    id: "sunset",
+  },
+  {
+    name: "🍮 Caramellatte",
+    id: "caramellatte",
+  },
+  {
+    name: "🌊 Abyss",
+    id: "abyss",
+  },
+  {
+    name: "🧣 Silk",
+    id: "silk",
+  },
 ];

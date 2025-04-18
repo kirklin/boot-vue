@@ -11,6 +11,8 @@ const { t } = useI18n();
 const mode = useColorMode<CustomTheme>({
   attribute: "data-theme",
   modes: {
+    light: "light",
+    dark: "dark",
     cupcake: "cupcake",
     bumblebee: "bumblebee",
     emerald: "emerald",
@@ -38,6 +40,12 @@ const mode = useColorMode<CustomTheme>({
     night: "night",
     coffee: "coffee",
     winter: "winter",
+    dim: "dim",
+    nord: "nord",
+    sunset: "sunset",
+    caramellatte: "caramellatte",
+    abyss: "abyss",
+    silk: "silk",
   },
 });
 
@@ -89,69 +97,44 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
 
 <template>
   <div title="Change Theme" class="dropdown dropdown-end">
-    <div tabindex="0" class="gap-1 normal-case btn btn-ghost">
+    <div tabindex="0" role="button" class="gap-1 btn btn-ghost btn-sm" aria-label="Change Theme">
       <UnoCSSIconButton icon="i-tabler-color-swatch" />
       <span class="hidden md:inline">{{ t("Themes") }}</span>
       <UnoCSSIconButton icon="i-tabler-chevron-down" />
     </div>
-    <div
-      class="dropdown-content scrollbar top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl rounded-t-box rounded-b-box"
-    >
-      <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
-        <button
-          v-for="theme in themeList"
-          :key="theme.id"
-          class="overflow-hidden rounded-lg text-left outline-2 outline-base-content outline-offset-2 hover:outline"
-          :class="mode === theme.id ? 'outline' : ''"
-          type="button"
-          @click="changeTheme($event, theme.id)"
-          @keydown="handleKeyDown($event, theme.id)"
-        >
-          <div
-            :data-theme="theme.id"
-            class="w-full cursor-pointer bg-base-100 text-base-content font-sans"
+    <div tabindex="0" class="bg-base-200 text-base-content mt-16 outline-1 outline-black/5 border border-white/5 h-[30.5rem] max-h-[calc(100vh-8.6rem)] shadow-2xl top-px overflow-y-auto dropdown-content rounded-box">
+      <ul class="w-56 menu">
+        <li class="text-xs menu-title">
+          {{ t("Themes") }}
+        </li>
+        <li v-for="theme in themeList" :key="theme.id">
+          <button
+            class="px-2 gap-3"
+            :class="mode === theme.id ? '[&_svg]:visible' : ''"
+            @click="changeTheme($event, theme.id)"
+            @keydown="handleKeyDown($event, theme.id)"
           >
-            <div class="grid grid-cols-5 grid-rows-3">
-              <div class="col-span-5 row-span-3 row-start-1 flex gap-1 px-4 py-3">
-                <div class="grow text-sm font-bold">
-                  {{ theme.id }}
-                </div>
-                <div class="flex shrink-0 flex-wrap gap-1">
-                  <div class="w-2 rounded bg-primary" />
-                  <div class="w-2 rounded bg-secondary" />
-                  <div class="w-2 rounded bg-accent" />
-                  <div class="w-2 rounded bg-neutral" />
-                </div>
-              </div>
+            <div :data-theme="theme.id" class="bg-base-100 p-1 rounded-md shrink-0 gap-0.5 grid grid-cols-2 shadow-sm">
+              <div class="bg-base-content rounded-full size-1" />
+              <div class="bg-primary rounded-full size-1" />
+              <div class="bg-secondary rounded-full size-1" />
+              <div class="bg-accent rounded-full size-1" />
             </div>
-          </div>
-        </button>
-      </div>
+            <div class="w-32 truncate">
+              {{ theme.id }}
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="shrink-0 h-3 w-3 invisible">
+              <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+            </svg>
+          </button>
+        </li>
+        <li />
+      </ul>
     </div>
   </div>
 </template>
 
- <style scoped>
- .scrollbar::-webkit-scrollbar {
-  width: 20px;
-  height: 20px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 100vh;
-  background: #f7f4ed;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: #e0cbcb;
-  border-radius: 100vh;
-  border: 3px solid #f6f7ed;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #c0a0b9;
-}
-
+<style scoped>
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;

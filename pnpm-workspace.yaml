@@ -1,7 +1,7 @@
 packages: []
-
 catalogs:
   build:
+    "@ameinhardt/unocss-preset-daisy": ^1.1.6
     "@intlify/unplugin-vue-i18n": ^6.0.5
     "@unocss/eslint-config": ^66.1.0-beta.12
     "@vitejs/plugin-vue": ^5.2.3
@@ -9,7 +9,6 @@ catalogs:
     jsdom: ^26.1.0
     unocss: ^66.1.0-beta.12
     unocss-preset-chinese: ^0.3.3
-    unocss-preset-daisy: ^7.0.0
     unocss-preset-ease: ^0.0.4
     unplugin: ^2.3.2
     unplugin-auto-import: ^19.1.2
@@ -40,7 +39,7 @@ catalogs:
     "@kirklin/logger": ^0.0.2
     "@kirklin/reset-css": ^0.0.6
     "@vueuse/core": ^13.1.0
-    daisyui: ^3.9.4
+    daisyui: ^5.0.27
     iso-639-1: ^3.1.5
     nprogress: ^0.2.0
     pinia: ^3.0.2
