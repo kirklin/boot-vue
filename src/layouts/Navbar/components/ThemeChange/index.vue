@@ -78,6 +78,13 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
     mode.value = theme;
   }
 }
+
+function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    changeTheme(event as unknown as MouseEvent, theme);
+  }
+}
 </script>
 
 <template>
@@ -91,12 +98,14 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
       class="dropdown-content scrollbar top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl rounded-t-box rounded-b-box"
     >
       <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
-        <div
+        <button
           v-for="theme in themeList"
           :key="theme.id"
-          class="overflow-hidden rounded-lg outline-2 outline-base-content outline-offset-2 hover:outline"
+          class="overflow-hidden rounded-lg text-left outline-2 outline-base-content outline-offset-2 hover:outline"
           :class="mode === theme.id ? 'outline' : ''"
+          type="button"
           @click="changeTheme($event, theme.id)"
+          @keydown="handleKeyDown($event, theme.id)"
         >
           <div
             :data-theme="theme.id"
@@ -116,7 +125,7 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
               </div>
             </div>
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>
