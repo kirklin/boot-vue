@@ -55,6 +55,7 @@
     "@vue/test-utils": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-format": "catalog:",
+    "eslint-plugin-vuejs-accessibility": "catalog:",
     "husky": "catalog:",
     "jsdom": "catalog:",
     "lint-staged": "catalog:",
