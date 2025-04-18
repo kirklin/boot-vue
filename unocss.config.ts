@@ -1,4 +1,5 @@
 import { presetDaisy } from "@ameinhardt/unocss-preset-daisy";
+import theme from "daisyui/functions/variables";
 import { presetAttributify, presetIcons, presetWind4, transformerDirectives, transformerVariantGroup } from "unocss";
 import presetChinese from "unocss-preset-chinese";
 import presetEase from "unocss-preset-ease";
@@ -15,6 +16,7 @@ export default defineConfig({
     }),
     presetDaisy({
       base: true,
+      utils: true,
       themes: [
         "light",
         "dark",
@@ -54,6 +56,9 @@ export default defineConfig({
       ],
     }),
   ],
+  theme: {
+    ...theme,
+  },
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),

@@ -6,7 +6,7 @@ import appStore from "~/store";
   <div class="bg-base-100 py-20 flex flex-col gap-20 items-center">
     <div class="mockup-phone">
       <div class="mockup-phone-camera" />
-      <div class="mockup-phone-display">
+      <div class="mockup-phone-display text-white">
         <div class="text-center grid h-full place-content-center">
           <p class="text-xl font-medium tracking-wide uppercase">
             Counter:

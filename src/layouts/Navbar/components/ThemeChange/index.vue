@@ -98,32 +98,51 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
 <template>
   <div title="Change Theme" class="dropdown dropdown-end">
     <div tabindex="0" role="button" class="gap-1 btn btn-ghost btn-sm" aria-label="Change Theme">
-      <UnoCSSIconButton icon="i-tabler-color-swatch" />
+      <div class="grid grid-cols-2 shrink-0 gap-0.5 border border-base-content/10 rounded-md bg-base-100 p-1">
+        <div class="size-1 rounded-full bg-base-content" />
+        <div class="size-1 rounded-full bg-primary" />
+        <div class="size-1 rounded-full bg-secondary" />
+        <div class="size-1 rounded-full bg-accent" />
+      </div>
       <span class="hidden md:inline">{{ t("Themes") }}</span>
-      <UnoCSSIconButton icon="i-tabler-chevron-down" />
+      <svg
+        width="12px"
+        height="12px"
+        class="mt-px hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2048 2048"
+      >
+        <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z" />
+      </svg>
     </div>
-    <div tabindex="0" class="bg-base-200 text-base-content mt-16 outline-1 outline-black/5 border border-white/5 h-[30.5rem] max-h-[calc(100vh-8.6rem)] shadow-2xl top-px overflow-y-auto dropdown-content rounded-box">
+    <div
+      tabindex="0"
+      class="dropdown-content top-px mt-12 h-[30.5rem] max-h-[calc(100vh-8.6rem)] overflow-y-auto border border-white/5 bg-base-200 text-base-content shadow-2xl outline-1 outline-black/5 rounded-box"
+    >
       <ul class="w-56 menu">
         <li class="text-xs menu-title">
           {{ t("Themes") }}
         </li>
         <li v-for="theme in themeList" :key="theme.id">
           <button
-            class="px-2 gap-3"
+            class="gap-3 px-2"
             :class="mode === theme.id ? '[&_svg]:visible' : ''"
             @click="changeTheme($event, theme.id)"
             @keydown="handleKeyDown($event, theme.id)"
           >
-            <div :data-theme="theme.id" class="bg-base-100 p-1 rounded-md shrink-0 gap-0.5 grid grid-cols-2 shadow-sm">
-              <div class="bg-base-content rounded-full size-1" />
-              <div class="bg-primary rounded-full size-1" />
-              <div class="bg-secondary rounded-full size-1" />
-              <div class="bg-accent rounded-full size-1" />
+            <div
+              :data-theme="theme.id"
+              class="grid grid-cols-2 shrink-0 gap-0.5 rounded-md bg-base-100 p-1 shadow-sm"
+            >
+              <div class="size-1 rounded-full bg-base-content" />
+              <div class="size-1 rounded-full bg-primary" />
+              <div class="size-1 rounded-full bg-secondary" />
+              <div class="size-1 rounded-full bg-accent" />
             </div>
             <div class="w-32 truncate">
               {{ theme.id }}
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="shrink-0 h-3 w-3 invisible">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="invisible h-3 w-3 shrink-0">
               <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
             </svg>
           </button>
@@ -135,6 +154,26 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
 </template>
 
 <style scoped>
+ .scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
