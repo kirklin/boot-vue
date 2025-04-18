@@ -69,6 +69,7 @@
     "unplugin-vue-components": "catalog:build",
     "vite": "catalog:build",
     "vite-plugin-inspect": "catalog:build",
+    "vite-plugin-mcp": "catalog:build",
     "vite-plugin-pwa": "catalog:build",
     "vite-plugin-vue-devtools": "catalog:build",
     "vitest": "catalog:dev",

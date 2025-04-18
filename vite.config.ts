@@ -10,6 +10,7 @@ import Components from "unplugin-vue-components/vite";
 import { defineConfig } from "vite";
 import Inspect from "vite-plugin-inspect";
 
+import { ViteMcp } from "vite-plugin-mcp";
 import { VitePWA } from "vite-plugin-pwa";
 import VueDevTools from "vite-plugin-vue-devtools";
 
@@ -114,6 +115,9 @@ export default defineConfig({
     // https://github.com/unocss/unocss
     // see unocss.config.ts for config
     UnoCss(),
+
+    // https://github.com/antfu/nuxt-mcp/tree/main/packages/vite-plugin-mcp
+    ViteMcp(),
   ],
   resolve: {
     alias: {

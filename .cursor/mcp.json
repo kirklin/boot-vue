@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "vite": {
+      "url": "http://localhost:8888/__mcp/sse"
+    }
+  }
+}
