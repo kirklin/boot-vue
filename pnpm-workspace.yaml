@@ -1,3 +1,5 @@
+packages:
+
 catalogs:
   build:
     "@intlify/unplugin-vue-i18n": ^6.0.5
