@@ -137,3 +137,5 @@ Run the image and specify port mapping with the `-p` flag.
 ```bash
 docker run --rm -it -p 8080:80 viteboot:latest
 ```
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
