@@ -98,17 +98,17 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
 <template>
   <div title="Change Theme" class="dropdown dropdown-end">
     <div tabindex="0" role="button" class="gap-1 btn btn-ghost btn-sm" aria-label="Change Theme">
-      <div class="grid grid-cols-2 shrink-0 gap-0.5 border border-base-content/10 rounded-md bg-base-100 p-1">
-        <div class="size-1 rounded-full bg-base-content" />
-        <div class="size-1 rounded-full bg-primary" />
-        <div class="size-1 rounded-full bg-secondary" />
-        <div class="size-1 rounded-full bg-accent" />
+      <div class="p-1 border border-base-content/10 rounded-md bg-base-100 shrink-0 gap-0.5 grid grid-cols-2">
+        <div class="rounded-full bg-base-content size-1" />
+        <div class="rounded-full bg-primary size-1" />
+        <div class="rounded-full bg-secondary size-1" />
+        <div class="rounded-full bg-accent size-1" />
       </div>
       <span class="hidden md:inline">{{ t("Themes") }}</span>
       <svg
         width="12px"
         height="12px"
-        class="mt-px hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+        class="mt-px opacity-60 h-2 w-2 hidden fill-current sm:inline-block"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2048 2048"
       >
@@ -117,7 +117,7 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
     </div>
     <div
       tabindex="0"
-      class="dropdown-content top-px mt-12 h-[30.5rem] max-h-[calc(100vh-8.6rem)] overflow-y-auto border border-white/5 bg-base-200 text-base-content shadow-2xl outline-1 outline-black/5 rounded-box"
+      class="text-base-content mt-12 outline-1 outline-black/5 border border-white/5 bg-base-200 h-[30.5rem] max-h-[calc(100vh-8.6rem)] shadow-2xl top-px overflow-y-auto dropdown-content rounded-box"
     >
       <ul class="w-56 menu">
         <li class="text-xs menu-title">
@@ -125,24 +125,24 @@ function handleKeyDown(event: KeyboardEvent, theme: CustomTheme) {
         </li>
         <li v-for="theme in themeList" :key="theme.id">
           <button
-            class="gap-3 px-2"
+            class="px-2 gap-3"
             :class="mode === theme.id ? '[&_svg]:visible' : ''"
             @click="changeTheme($event, theme.id)"
             @keydown="handleKeyDown($event, theme.id)"
           >
             <div
               :data-theme="theme.id"
-              class="grid grid-cols-2 shrink-0 gap-0.5 rounded-md bg-base-100 p-1 shadow-sm"
+              class="p-1 rounded-md bg-base-100 shrink-0 gap-0.5 grid grid-cols-2 shadow-sm"
             >
-              <div class="size-1 rounded-full bg-base-content" />
-              <div class="size-1 rounded-full bg-primary" />
-              <div class="size-1 rounded-full bg-secondary" />
-              <div class="size-1 rounded-full bg-accent" />
+              <div class="rounded-full bg-base-content size-1" />
+              <div class="rounded-full bg-primary size-1" />
+              <div class="rounded-full bg-secondary size-1" />
+              <div class="rounded-full bg-accent size-1" />
             </div>
             <div class="w-32 truncate">
               {{ theme.id }}
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="invisible h-3 w-3 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="shrink-0 h-3 w-3 invisible">
               <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
             </svg>
           </button>

@@ -27,11 +27,11 @@ function ChangeLocales(lang: string) {
     <div
       tabindex="0"
       role="button"
-      class="gap-1 font-bold btn btn-ghost btn-sm"
+      class="font-bold gap-1 btn btn-ghost btn-sm"
       aria-label="Language"
       title="Change Language"
     >
-      <svg class="size-4 text-base-content/70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <svg class="text-base-content/70 size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           stroke-linejoin="round"
           stroke-linecap="round"
@@ -42,7 +42,7 @@ function ChangeLocales(lang: string) {
         />
       </svg>
       <svg
-        class="mt-px hidden size-2 fill-current opacity-60 sm:inline-block"
+        class="mt-px opacity-60 size-2 hidden fill-current sm:inline-block"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2048 2048"
       >
@@ -51,7 +51,7 @@ function ChangeLocales(lang: string) {
     </div>
     <div
       tabindex="0"
-      class="dropdown-content top-px mt-12 max-h-[calc(100vh-8.6rem)] w-56 overflow-y-auto border border-white/5 bg-base-200 text-base-content shadow-2xl outline-1 outline-black/5 rounded-box"
+      class="text-base-content mt-12 outline-1 outline-black/5 border border-white/5 bg-base-200 max-h-[calc(100vh-8.6rem)] w-56 shadow-2xl top-px overflow-y-auto dropdown-content rounded-box"
     >
       <ul class="w-full menu menu-sm">
         <li v-for="lang in sortedLocales" :key="lang">
@@ -60,7 +60,7 @@ function ChangeLocales(lang: string) {
             :class="{ 'menu-active': locale === lang }"
             @click="ChangeLocales(lang)"
           >
-            <span class="pe-4 font-bold font-mono opacity-40">
+            <span class="font-bold font-mono pe-4 opacity-40">
               {{ lang }}
             </span>
             <span class="font-[sans-serif]">

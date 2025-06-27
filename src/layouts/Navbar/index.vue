@@ -21,7 +21,7 @@ defineOptions({
           class="px-2 btn btn-ghost"
         >
           <div
-            class="text-primary text-lg inline-flex transition-all duration-200 md:text-3xl"
+            class="text-lg text-primary inline-flex transition-all duration-200 md:text-3xl"
           >
             <span class="text-accent">B<span class="lowercase">oot</span></span>
             <span class="text-base-content">V<span class="lowercase">ue</span></span>

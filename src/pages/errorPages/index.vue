@@ -7,7 +7,7 @@ const errorCode = ref<number>(404);
 </script>
 
 <template>
-  <div class="bg-base-100 py-20 flex flex-col gap-20 items-center">
+  <div class="py-20 bg-base-100 flex flex-col gap-20 items-center">
     <div class="bg-base-100 w-96 card">
       <div class="card-body">
         <h2 class="card-title">

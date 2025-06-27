@@ -3,12 +3,12 @@ import appStore from "~/store";
 </script>
 
 <template>
-  <div class="bg-base-100 py-20 flex flex-col gap-20 items-center">
+  <div class="py-20 bg-base-100 flex flex-col gap-20 items-center">
     <div class="mockup-phone">
       <div class="mockup-phone-camera" />
-      <div class="mockup-phone-display text-white">
+      <div class="text-white mockup-phone-display">
         <div class="text-center grid h-full place-content-center">
-          <p class="text-xl font-medium tracking-wide uppercase">
+          <p class="text-xl tracking-wide font-medium uppercase">
             Counter:
           </p>
           <p class="text-4xl font-bold uppercase">

@@ -9,7 +9,7 @@ function testStore() {
 </script>
 
 <template>
-  <div class="bg-base-100/90 text-base-content mt-[-4rem] min-h-screen hero">
+  <div class="text-base-content mt-[-4rem] bg-base-100/90 min-h-screen hero">
     <div
       class="place-items-center"
     />
