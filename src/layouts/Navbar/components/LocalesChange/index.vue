@@ -10,7 +10,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
-import { languagesNameList } from "~/composables/langugage";
+import { languagesNameList } from "~/composables/language";
 
 defineOptions({
   name: "LocalesChange",
