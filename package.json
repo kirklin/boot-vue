@@ -67,6 +67,7 @@
     "husky": "catalog:dev",
     "jsdom": "catalog:build",
     "lint-staged": "catalog:dev",
+    "shadcn-vue": "catalog:build",
     "tailwindcss": "catalog:build",
     "tw-animate-css": "catalog:build",
     "typescript": "catalog:dev",
