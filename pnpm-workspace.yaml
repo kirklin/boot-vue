@@ -1,4 +1,11 @@
+shamefullyHoist: true
 packages: []
+overrides:
+  unplugin: "catalog:build"
+  vite: "catalog:build"
+  vite-plugin-inspect: "catalog:build"
+allowBuilds:
+  esbuild: true
 catalogs:
   build:
     "@ameinhardt/unocss-preset-daisy": ^1.1.8
