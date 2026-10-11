@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <meta name="description" content="Vite Starter Template By Kirk Lin" />
+    <script>
+      // Apply the stored color mode before the first paint, so dark mode does not flash white
+      {
+        const colorMode = localStorage.getItem("vueuse-color-scheme") ?? "auto";
+        if (colorMode === "dark" || (colorMode === "auto" && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="app">
