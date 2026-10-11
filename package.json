@@ -14,6 +14,9 @@
     "boot"
   ],
   "main": "src/main.ts",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -30,6 +33,7 @@
   "dependencies": {
     "@kirklin/logger": "catalog:frontend",
     "@kirklin/reset-css": "catalog:frontend",
+    "@vue/devtools-api": "catalog:frontend",
     "@vueuse/core": "catalog:frontend",
     "daisyui": "catalog:frontend",
     "iso-639-1": "catalog:frontend",
@@ -55,6 +59,7 @@
     "@vue/compiler-dom": "catalog:build",
     "@vue/test-utils": "catalog:dev",
     "eslint": "catalog:dev",
+    "eslint-plugin-erasable-syntax-only": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "eslint-plugin-vuejs-accessibility": "catalog:dev",
     "husky": "catalog:dev",

@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { resolve } from "node:path";
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
@@ -23,14 +24,7 @@ export default defineConfig({
     proxy: {},
   },
   plugins: [
-    Vue(
-      {
-        script: {
-          propsDestructure: true,
-          defineModel: true,
-        },
-      },
-    ),
+    Vue(),
     Icons({
       scale: 1.5, // Scale of icons against 1em
       defaultStyle: "", // Style apply to icons
@@ -73,7 +67,7 @@ export default defineConfig({
       runtimeOnly: true,
       compositionOnly: true,
       fullInstall: true,
-      include: [resolve(__dirname, "src/locales/**")],
+      include: [resolve(import.meta.dirname, "src/locales/**")],
     }),
 
     // https://github.com/antfu/vite-plugin-pwa
@@ -121,7 +115,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "~/": `${resolve(__dirname, "src")}/`,
+      "~": resolve(import.meta.dirname, "src"),
     },
   },
   css: {

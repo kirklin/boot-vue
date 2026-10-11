@@ -19,7 +19,7 @@ import "uno.css";
 const app = createApp(App);
 app.use(createI18n({
   legacy: false,
-  locale: unref(useLocalStorage("locale", "zh")),
+  locale: useLocalStorage("locale", "zh").value,
   messages,
 }));
 app.use(createPinia());
