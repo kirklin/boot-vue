@@ -40,6 +40,7 @@ catalogs:
     "@commitlint/cli": ^21.2.3
     "@commitlint/config-conventional": ^21.2.3
     "@iconify-json/mdi": ^1.2.3
+    "@iconify-json/simple-icons": ^1.2.99
     "@kirklin/eslint-config": ^8.5.0
     "@vitest/coverage-v8": ^5.0.3
     "@vue/test-utils": ^2.5.1

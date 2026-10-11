@@ -1,27 +1,26 @@
 <script setup lang="ts">
-import { Button } from "~/components/ui/button";
+import { useI18n } from "vue-i18n";
+import Actions from "~/components/landing/Actions.vue";
 
-const router = useRouter();
-
-function testStore() {
-  router.push({
-    name: "StoreTest",
-  });
-}
+const { t } = useI18n();
 </script>
 
 <template>
-  <div class="-mt-16 flex min-h-screen items-center justify-center px-4">
-    <div class="max-w-md text-center">
-      <h1 class="mb-5 text-5xl font-bold">
+  <!-- The product in one headline, with what it includes and the two calls to action beside it. -->
+  <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
+    <div>
+      <p class="text-muted-foreground text-lg font-semibold sm:text-xl">
         Boot Vue
-      </h1>
-      <p class="mb-5">
-        Mocking up web app with Boot Vue <sup>(speed)</sup>
       </p>
-      <Button size="lg" @click="testStore">
-        Test Store
-      </Button>
+      <h1 class="mt-2 max-w-4xl text-5xl/[1.05] font-semibold tracking-[-0.035em] text-balance sm:text-6xl/[1.03] lg:text-7xl/[1.02] [&:lang(zh)]:tracking-normal">
+        {{ t("home.hero.title") }}
+      </h1>
+    </div>
+    <div class="max-w-sm lg:pb-1.5">
+      <p class="text-muted-foreground text-[17px]/7 text-pretty">
+        {{ t("home.hero.description") }}
+      </p>
+      <Actions class="mt-6 items-start justify-start sm:items-center" />
     </div>
   </div>
 </template>

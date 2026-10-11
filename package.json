@@ -51,6 +51,7 @@
     "@commitlint/cli": "catalog:dev",
     "@commitlint/config-conventional": "catalog:dev",
     "@iconify-json/mdi": "catalog:dev",
+    "@iconify-json/simple-icons": "catalog:dev",
     "@intlify/unplugin-vue-i18n": "catalog:build",
     "@kirklin/eslint-config": "catalog:dev",
     "@tailwindcss/vite": "catalog:build",

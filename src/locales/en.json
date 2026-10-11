@@ -5,5 +5,145 @@
   "Dark": "Dark",
   "System": "System",
   "Language": "Language",
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "store": "Counter",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "siteMenu": {
+    "explore": "Explore Boot Vue",
+    "allFeatures": "See all features",
+    "getStarted": "Get started",
+    "resources": "Resources"
+  },
+  "links": {
+    "components": "UI components",
+    "devServer": "Dev server",
+    "theming": "Dark mode",
+    "state": "State management",
+    "i18n": "Internationalization",
+    "autoImports": "Auto imports",
+    "template": "Use this template",
+    "readme": "Read the README",
+    "netlify": "Deploy to Netlify",
+    "vercel": "Deploy to Vercel",
+    "docker": "Build with Docker",
+    "store": "Counter demo",
+    "issues": "Report an issue",
+    "eslintConfig": "ESLint config",
+    "templates": "More Boot templates"
+  },
+  "footer": {
+    "description": "A Vue 3 starter with Vite, TypeScript, Tailwind CSS and shadcn-vue, all set up.",
+    "license": "Released under the MIT License.",
+    "madeBy": "Made by {name}"
+  },
+  "home": {
+    "hero": {
+      "title": "Everything a Vue app starts with.",
+      "description": "A Vue 3 starter on Vite 8 with TypeScript, Tailwind CSS 4 and shadcn-vue. Routing, state, i18n, PWA and linting are already set up."
+    },
+    "actions": {
+      "template": "Use this template",
+      "github": "View on GitHub"
+    },
+    "copy": {
+      "label": "Copy command",
+      "copied": "Copied to clipboard"
+    },
+    "cta": {
+      "title": "Start your next Vue app.",
+      "description": "Create a repository from the template, or copy the project with one command."
+    },
+    "features": {
+      "components": {
+        "title": "Components you own.",
+        "description": "shadcn-vue copies accessible Reka UI components into src/components/ui, styled with Tailwind CSS 4. One command adds another.",
+        "card": {
+          "title": "Notifications",
+          "description": "Choose how you hear about updates.",
+          "push": "Push notifications",
+          "digest": "Weekly digest",
+          "volume": "Volume",
+          "reset": "Reset",
+          "save": "Save",
+          "saved": "Saved"
+        }
+      },
+      "dev": {
+        "title": "Ready in a blink.",
+        "description": "Vite 8 runs on Rolldown. The dev server comes with Vue DevTools, Inspect and an MCP server for AI assistants."
+      },
+      "theming": {
+        "eyebrow": "Dark mode",
+        "title": "Light by day. Dark by night.",
+        "description": "Follows the system theme or the visitor's choice, and the new theme spreads in a circle from the click. Try it here.",
+        "appearance": "Appearance"
+      },
+      "state": {
+        "title": "State that stays.",
+        "description": "Pinia stores keep their values from page to page. Count up here, then open the counter page.",
+        "increment": "Increase the count",
+        "open": "Open the counter page"
+      },
+      "pwa": {
+        "title": "Installs like an app.",
+        "description": "vite-plugin-pwa adds the manifest and a service worker that updates itself. Once visited, the site works offline.",
+        "running": "Service worker running",
+        "production": "Service worker runs in production builds"
+      },
+      "i18n": {
+        "title": "Every language, one codebase.",
+        "description": "Messages live in src/locales as JSON and are compiled at build time. The language picker remembers each visitor's choice.",
+        "language": "Language",
+        "sample": {
+          "title": "Kirk invited you",
+          "body": "Join the boot-vue project on GitHub.",
+          "action": "Accept"
+        }
+      },
+      "autoImport": {
+        "eyebrow": "Auto imports",
+        "title": "No import lines.",
+        "description": "Vue, Vue Router, vue-i18n and VueUse, your own composables and stores, components and icons are imported for you, fully typed.",
+        "from": "Imported from"
+      },
+      "typography": {
+        "eyebrow": "Chinese typography",
+        "title": "Punctuation, set right.",
+        "description": "Latin text uses the system UI font, while Chinese quotation marks, dashes and ellipses take the Chinese font, with Chinese shapes and spacing.",
+        "label": "Font stack",
+        "boot": "Boot Vue",
+        "latin": "Latin first"
+      },
+      "deploy": {
+        "eyebrow": "Deploy",
+        "title": "Ship it anywhere.",
+        "description": "Deploy to Netlify or Vercel in a few clicks, or build a Docker image served by nginx.",
+        "netlify": "Deploy in one click",
+        "vercel": "Import the repository",
+        "docker": "Build an nginx image"
+      },
+      "stack": {
+        "eyebrow": "Foundation",
+        "title": "Built on the modern web.",
+        "description": "Vue 3.5, Vite 8, TypeScript 6 and Tailwind CSS 4, with Pinia, VueUse, Vitest, pnpm and ESLint already set up."
+      }
+    }
+  },
+  "store": {
+    "title": "Shared across pages.",
+    "description": "This count lives in a Pinia store, the same one the home page uses. Count up here, then go back.",
+    "increment": "Increase the count",
+    "back": "Back to the home page"
+  },
+  "error": {
+    "title": "Page not found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "home": "Back to home",
+    "back": "Go back"
+  },
   "": ""
 }

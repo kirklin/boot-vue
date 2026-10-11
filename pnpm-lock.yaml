@@ -216,6 +216,9 @@ catalogs:
     '@iconify-json/mdi':
       specifier: ^1.2.3
       version: 1.2.3
+    '@iconify-json/simple-icons':
+      specifier: ^1.2.99
+      version: 1.2.99
     '@kirklin/eslint-config':
       specifier: ^8.5.0
       version: 8.5.0
@@ -364,6 +367,9 @@ importers:
       '@iconify-json/mdi':
         specifier: catalog:dev
         version: 1.2.3
+      '@iconify-json/simple-icons':
+        specifier: catalog:dev
+        version: 1.2.99
       '@intlify/unplugin-vue-i18n':
         specifier: catalog:build
         version: 11.2.5(@vue/compiler-dom@3.5.43)(eslint@10.12.0(jiti@2.7.0))(rolldown@1.2.13)(rollup@4.64.4)(typescript@6.0.3)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(stylus@0.57.0)(terser@5.51.2)(yaml@2.9.1))(vue-i18n@11.4.13(vue@3.5.43(typescript@6.0.3)))(vue@3.5.43(typescript@6.0.3))
@@ -1493,6 +1499,9 @@ packages:
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
+
+  '@iconify-json/simple-icons@1.2.99':
+    resolution: {integrity: sha512-kouZhqvUoNdxEe+lZksbJJZMCZv4b4Ob62O1GW3fcpz/I0mVPzM+9/Qf/DUuv5ns8l6c46D8M/ubhJjjbLp9HQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -7273,6 +7282,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.3': {}
 
   '@iconify-json/mdi@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.2.99':
     dependencies:
       '@iconify/types': 2.0.0
 

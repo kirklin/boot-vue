@@ -30,15 +30,35 @@
   unicode-range: U+201C, U+201D, U+2018, U+2019, U+2E3A, U+2014, U+2013, U+2026, U+00B7, U+007E, U+002F;
 }
 
+/* Latin text takes the system UI font, Chinese text the first Chinese font each platform has */
 @theme {
   --font-sans:
-    "Punctuation Chinese", Arial, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC",
+    "Punctuation Chinese", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Heiti SC",
     "Microsoft YaHei", system-ui, Ubuntu, "Droid Sans", "Source Han Sans SC", "Source Han Sans CN", "Source Han Sans",
     sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --animate-caret-blink: caret-blink 1.1s ease-out infinite;
+
+  @keyframes caret-blink {
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+    20%,
+    50% {
+      opacity: 0;
+    }
+  }
 }
 
 @theme inline {
   --font-heading: var(--font-sans);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-link: var(--link);
+  --color-vue: var(--vue);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -109,6 +129,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand: oklch(0.543 0.117 163.41);
+  --brand-foreground: oklch(1 0 0);
+  --link: oklch(0.508 0.105 165.61);
+  --vue: oklch(0.703 0.132 160.37);
 }
 
 .dark {
@@ -143,6 +167,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --link: oklch(0.762 0.154 159.36);
 }
 
 @layer base {
@@ -152,6 +177,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Chinese headings wrap at spaces and punctuation instead of inside a word */
+  :lang(zh) :is(h1, h2, h3) {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
 }
 
 /* The theme switch reveals the new theme in a growing circle instead of the default cross-fade */
@@ -159,4 +189,22 @@
 ::view-transition-new(root) {
   animation: none;
   mix-blend-mode: normal;
+}
+
+/* Content fades up as it scrolls into view; browsers without scroll-driven animations show it as it is */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 50%;
+    }
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
 }

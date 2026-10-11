@@ -5,5 +5,145 @@
   "Dark": "深色",
   "System": "跟随系统",
   "Language": "语言",
+  "nav": {
+    "home": "首页",
+    "features": "功能",
+    "store": "计数器",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "siteMenu": {
+    "explore": "探索 Boot Vue",
+    "allFeatures": "查看全部功能",
+    "getStarted": "快速开始",
+    "resources": "资源"
+  },
+  "links": {
+    "components": "界面组件",
+    "devServer": "开发服务器",
+    "theming": "深色模式",
+    "state": "状态管理",
+    "i18n": "多语言",
+    "autoImports": "自动导入",
+    "template": "使用此模板",
+    "readme": "阅读 README",
+    "netlify": "部署到 Netlify",
+    "vercel": "部署到 Vercel",
+    "docker": "使用 Docker 构建",
+    "store": "计数器示例",
+    "issues": "反馈问题",
+    "eslintConfig": "ESLint 配置",
+    "templates": "更多 Boot 模板"
+  },
+  "footer": {
+    "description": "Vue 3 应用模板，Vite、TypeScript、Tailwind CSS 和 shadcn-vue 都已配置好。",
+    "license": "基于 MIT 许可证发布。",
+    "madeBy": "由 {name} 制作"
+  },
+  "home": {
+    "hero": {
+      "title": "Vue 应用的起点，一应俱全。",
+      "description": "基于 Vite 8 的 Vue 3 模板，带有 TypeScript、Tailwind CSS 4 和 shadcn-vue。路由、状态管理、多语言、PWA 和代码检查都已配置好。"
+    },
+    "actions": {
+      "template": "使用此模板",
+      "github": "在 GitHub 上查看"
+    },
+    "copy": {
+      "label": "复制命令",
+      "copied": "已复制到剪贴板"
+    },
+    "cta": {
+      "title": "开始你的下一个 Vue 应用。",
+      "description": "从模板创建仓库，或者用一条命令复制整个项目。"
+    },
+    "features": {
+      "components": {
+        "title": "组件代码，归你所有。",
+        "description": "shadcn-vue 把基于 Reka UI 的无障碍组件复制到 src/components/ui，样式由 Tailwind CSS 4 编写，一条命令就能再添加一个。",
+        "card": {
+          "title": "通知",
+          "description": "选择接收更新的方式。",
+          "push": "推送通知",
+          "digest": "每周摘要",
+          "volume": "音量",
+          "reset": "重置",
+          "save": "保存",
+          "saved": "已保存"
+        }
+      },
+      "dev": {
+        "title": "眨眼间就绪。",
+        "description": "Vite 8 基于 Rolldown 构建。开发服务器自带 Vue DevTools、Inspect，还有一个供 AI 助手使用的 MCP 服务。"
+      },
+      "theming": {
+        "eyebrow": "深色模式",
+        "title": "白天浅色，夜晚深色。",
+        "description": "跟随系统主题，也可以手动选择，新主题会从点击的位置以圆形展开。可以在这里直接试试。",
+        "appearance": "外观"
+      },
+      "state": {
+        "title": "状态，一直都在。",
+        "description": "Pinia 状态仓库在页面切换时保留数值。在这里加一，再打开计数器页面看看。",
+        "increment": "计数加一",
+        "open": "打开计数器页面"
+      },
+      "pwa": {
+        "title": "像应用一样安装。",
+        "description": "vite-plugin-pwa 生成应用清单和自动更新的 Service Worker，访问过一次就能离线使用。",
+        "running": "Service Worker 运行中",
+        "production": "Service Worker 在生产构建中运行"
+      },
+      "i18n": {
+        "title": "多种语言，一套代码。",
+        "description": "翻译文本以 JSON 格式存放在 src/locales，构建时预先编译，访客的语言选择会被记住。",
+        "language": "语言",
+        "sample": {
+          "title": "Kirk 邀请了你",
+          "body": "加入 GitHub 上的 boot-vue 项目。",
+          "action": "接受"
+        }
+      },
+      "autoImport": {
+        "eyebrow": "自动导入",
+        "title": "不用写 import。",
+        "description": "Vue、Vue Router、vue-i18n 和 VueUse 的 API，你自己的组合式函数和状态仓库，还有组件和图标，都会自动导入，类型完整。",
+        "from": "导入自"
+      },
+      "typography": {
+        "eyebrow": "中文排版",
+        "title": "中文标点，显示正确。",
+        "description": "西文使用系统界面字体，中文的引号、破折号和省略号使用中文字体，保持中文的字形和间距。",
+        "label": "字体设置",
+        "boot": "Boot Vue",
+        "latin": "西文字体优先"
+      },
+      "deploy": {
+        "eyebrow": "部署",
+        "title": "部署到任何地方。",
+        "description": "几次点击就能部署到 Netlify 或 Vercel，也可以构建由 nginx 提供服务的 Docker 镜像。",
+        "netlify": "一键部署",
+        "vercel": "导入仓库",
+        "docker": "构建 nginx 镜像"
+      },
+      "stack": {
+        "eyebrow": "技术基础",
+        "title": "建立在现代 Web 之上。",
+        "description": "Vue 3.5、Vite 8、TypeScript 6 和 Tailwind CSS 4，Pinia、VueUse、Vitest、pnpm 和 ESLint 也都已配置好。"
+      }
+    }
+  },
+  "store": {
+    "title": "在页面之间共享。",
+    "description": "这个计数保存在 Pinia 状态仓库中，和首页用的是同一个。在这里加一，再回到首页看看。",
+    "increment": "计数加一",
+    "back": "返回首页"
+  },
+  "error": {
+    "title": "页面不存在",
+    "description": "你访问的页面不存在或已被移动。",
+    "home": "返回首页",
+    "back": "返回上一页"
+  },
   "": ""
 }

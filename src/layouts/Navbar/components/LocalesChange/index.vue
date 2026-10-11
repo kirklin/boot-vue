@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ChevronDownIcon, LanguagesIcon } from "@lucide/vue";
+import { GlobeIcon } from "@lucide/vue";
 import { useLocalStorage } from "@vueuse/core";
 import { useI18n } from "vue-i18n";
 import { Button } from "~/components/ui/button";
@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
 import { languagesNameList } from "~/composables/language";
+import { barButton } from "../barButton";
 
 defineOptions({
   name: "LocalesChange",
@@ -34,12 +35,11 @@ function changeLocale(lang: string) {
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger as-child>
-      <Button variant="ghost" size="sm" :aria-label="t('Language')">
-        <LanguagesIcon />
-        <ChevronDownIcon class="hidden opacity-60 sm:block" />
+      <Button variant="ghost" size="icon-sm" :class="barButton" :aria-label="t('Language')">
+        <GlobeIcon class="size-4" />
       </Button>
     </DropdownMenuTrigger>
-    <DropdownMenuContent align="end" class="w-48">
+    <DropdownMenuContent align="end" class="w-40">
       <DropdownMenuRadioGroup :model-value="locale">
         <DropdownMenuRadioItem
           v-for="lang in sortedLocales"
@@ -47,8 +47,8 @@ function changeLocale(lang: string) {
           :value="lang"
           @select="changeLocale(lang)"
         >
-          <span class="text-muted-foreground w-6 font-mono text-xs">{{ lang }}</span>
           {{ languagesNameList.find((item) => item.code === lang)?.nativeName }}
+          <span class="text-muted-foreground ml-auto font-mono text-xs uppercase">{{ lang }}</span>
         </DropdownMenuRadioItem>
       </DropdownMenuRadioGroup>
     </DropdownMenuContent>
