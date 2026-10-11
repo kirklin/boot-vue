@@ -18,12 +18,13 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 - 🔥 [Latest syntax](https://github.com/vuejs/rfcs/pull/227): Uses the new <script setup> syntax 🆕
 - 📦 [Components auto importing](./src/components): Automatically imports components 🚚
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import): Uses unplugin-auto-import to directly import Composition API and others 📨
-- 🎨 [UnoCSS](https://unocss.dev/) - The instant on-demand atomic CSS engine, providing a lightweight and fast way to style your app.
-- 🌼 [Daisy](https://daisyui.com/) - The free and open-source Tailwind CSS component library
-- 💡 [Official router](https://router.vuejs.org/): Uses Vue Router v4 🛣️
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) - The utility-first CSS framework, set up with its official Vite plugin
+- 🧩 [shadcn-vue](https://www.shadcn-vue.com/) - Accessible components built on Reka UI, added to `src/components/ui` so the code is yours to change
+- 🌓 [Dark mode](./src/layouts/Navbar/components/ThemeChange): Light, dark, or follow the system, revealed with a circular view transition 🌗
+- 💡 [Official router](https://router.vuejs.org/): Uses Vue Router v5 🛣️
 - 🎉 [Loading feedback](https://github.com/rstacruz/nprogress): Uses NProgress to provide page loading progress feedback 🔄
-- 🍍 [State management](https://pinia.esm.dev/): Uses Pinia for state management 🗃️
-- 📜 [Chinese font preset](https://github.com/kirklin/unocss-preset-chinese): Includes a preset for Chinese fonts 🇨🇳
+- 🍍 [State management](https://pinia.vuejs.org/): Uses Pinia for state management 🗃️
+- 📜 [Chinese font stack](./src/styles/main.css): Chinese-first font family with Chinese punctuation glyphs 🇨🇳
 - 🌍 [I18n ready](./src/locales): Ready for internationalization with locales 🌎
 - ☁️ [Netlify ready](https://www.netlify.com/): Zero-config deployment on Netlify ☁️
 
@@ -35,7 +36,7 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 
 - 🌪️ [WebStorm](https://www.jetbrains.com/webstorm/)
 - 💻 [VSCode](https://code.visualstudio.com/)
-- 💡 [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- 💡 [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ### Performance
 
@@ -50,19 +51,16 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 │  └─workflows                            # GitHub Actions related configuration files
 ├─.husky                                  # Stores Git Hooks related configuration files
 │  └─_                                    # Stores Git Hooks execution scripts
-├─.idea                                   # Stores IntelliJ IDEA related configuration files
-│  ├─codeStyles                           # Stores code formatting rules
-│  └─inspectionProfiles                  # Stores code inspection rules
 ├─.vscode                                 # Stores VS Code related configuration files
 ├─public                                  # Stores static resources required by the web application
 ├─README.assets                           # Stores images and other resources used by README.md
 ├─src                                     # Stores the source code of the web application
 │  ├─assets                               # Stores static resources required by the web application
 │  ├─components                           # Stores the components of the web application
-│  │  └─Icon                              # Stores the components representing icons
+│  │  └─ui                                # Stores the shadcn-vue components added by its CLI
+│  ├─composables                          # Stores the composables of the web application
 │  ├─config                               # Stores the configuration files of the web application
-│  │  ├─nprogress                         # Stores the configuration file of the progress bar library NProgress
-│  │  └─unocss                            # Stores the configuration file of the UnoCSS
+│  │  └─nprogress                         # Stores the configuration file of the progress bar library NProgress
 │  ├─constant                             # Stores the constant values used in the web application
 │  ├─layouts                              # Stores the layout components of the web application
 │  │  ├─Footer                            # Stores the layout component representing the footer of the page
@@ -70,23 +68,25 @@ Mocking up web app with <b>Boot-Vue </b><sup><em>(speed)</em></sup><br>
 │  │      └─components                    # Stores the child components of the Navbar layout component
 │  │          ├─LocalesChange             # Stores the child component representing language switch
 │  │          └─ThemeChange               # Stores the child component representing theme switch
+│  ├─lib                                  # Stores helpers shared by the components, such as `cn`
 │  ├─locales                              # Stores the content files of the web application's multiple languages
+│  ├─pages                                # Stores the page components of the web application
+│  │  ├─errorPages                        # Stores the components representing error pages
+│  │  └─home                              # Stores the components representing the homepage
+│  │      └─components                    # Stores the child components of the homepage components
 │  ├─router                               # Stores the routing configuration files of the web application
 │  │  └─routes                            # Stores the modules of the web application's routes
 │  │      └─modules                       # Stores the sub-modules of the routing modules of the web application
 │  ├─store                                # Stores the state management files of the web application
-│  ├─styles                               # Stores the style files of the web application
-│  └─views                                # Stores the page components of the web application
-│      ├─errorPages                       # Stores the components representing error pages
-│      └─home                             # Stores the components representing the homepage
-│          └─components                   # Stores the child components of the homepage components
+│  └─styles                               # Stores the Tailwind CSS entry and theme variables
 ├─test                                    # Stores the test code
-│  └─__snapshots__                        # Stores the Jest snapshot test results
 └─types                                   # Stores the TypeScript type declaration files
 
 ```
 
 ## Try it now!
+
+> Boot-Vue requires Node.js 22.22.2+, 24.15.0+, or 26+
 
 ### GitHub Template
 
@@ -119,6 +119,14 @@ pnpm run build
 ```
 
 And you will see the generated file in `dist` that ready to be served.
+
+### Add components
+
+Pull more [shadcn-vue components](https://www.shadcn-vue.com/docs/components) into `src/components/ui` with its CLI
+
+```bash
+pnpm dlx shadcn-vue@latest add dialog
+```
 
 ### Deploy on Netlify
 
