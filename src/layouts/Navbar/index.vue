@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import UnoCSSIconButton from "~/components/Icon/UnoCSSIconButton.vue";
+import { Button } from "~/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "~/components/ui/tooltip";
 import LocalesChange from "./components/LocalesChange/index.vue";
 import ThemeChange from "./components/ThemeChange/index.vue";
 
@@ -9,44 +10,37 @@ defineOptions({
 </script>
 
 <template>
-  <div
-    class="text-base-content opacity-90 flex h-16 w-full transition-all duration-100 top-0 justify-center sticky z-30 backdrop-blur"
-  >
-    <nav class="w-full navbar">
-      <div class="flex flex-1 lg:gap-2 md:gap-1">
-        <RouterLink
-          to="/"
-          aria-current="page"
-          aria-label="Homepage"
-          class="px-2 btn btn-ghost"
-        >
-          <div
-            class="text-lg text-primary inline-flex transition-all duration-200 md:text-3xl"
-          >
-            <span class="text-accent">B<span class="lowercase">oot</span></span>
-            <span class="text-base-content">V<span class="lowercase">ue</span></span>
-          </div>
-        </RouterLink>
-      </div>
-      <div>
+  <header class="bg-background/80 sticky top-0 z-30 w-full backdrop-blur">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <RouterLink
+        to="/"
+        aria-label="Homepage"
+        class="text-2xl font-semibold tracking-tight md:text-3xl"
+      >
+        <span class="text-emerald-500">Boot</span><span>Vue</span>
+      </RouterLink>
+      <div class="flex items-center gap-1">
         <ThemeChange />
         <LocalesChange />
-        <span
-          class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
-          data-tip="GitHub"
-        >
-          <span class="flex-none items-center">
-            <a
-              aria-label="Github"
-              target="_blank"
+        <Tooltip>
+          <TooltipTrigger as-child>
+            <Button
+              as="a"
               href="https://github.com/kirklin/boot-vue"
-              class="gap-1 btn btn-ghost btn-sm"
+              target="_blank"
+              rel="nofollow"
+              variant="ghost"
+              size="icon"
+              aria-label="GitHub"
             >
-              <UnoCSSIconButton icon="i-mdi-github" />
-            </a>
-          </span>
-        </span>
+              <IMdiGithub />
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent side="bottom">
+            GitHub
+          </TooltipContent>
+        </Tooltip>
       </div>
     </nav>
-  </div>
+  </header>
 </template>

@@ -2,8 +2,8 @@
 import { resolve } from "node:path";
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
+import TailwindCss from "@tailwindcss/vite";
 import Vue from "@vitejs/plugin-vue";
-import UnoCss from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
@@ -104,9 +104,9 @@ export default defineConfig({
     // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools(),
 
-    // https://github.com/unocss/unocss
-    // see unocss.config.ts for config
-    UnoCss(),
+    // https://github.com/tailwindlabs/tailwindcss
+    // see src/styles/main.css for the theme
+    TailwindCss(),
 
     // https://github.com/antfu/nuxt-mcp/tree/main/packages/vite-plugin-mcp
     ViteMcp(),
@@ -114,16 +114,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": resolve(import.meta.dirname, "src"),
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-      @import "~/styles/variables.scss";
-    `,
-        javascriptEnabled: true,
-      },
     },
   },
   // https://github.com/vitest-dev/vitest

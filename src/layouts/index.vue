@@ -8,7 +8,7 @@ defineOptions({
 </script>
 
 <template>
-  <div class="font-chinese antialiased">
+  <div class="antialiased">
     <div class="min-h-screen">
       <Navbar />
       <RouterView />
@@ -16,7 +16,3 @@ defineOptions({
     <Footer />
   </div>
 </template>
-
-<style scoped>
-
-</style>

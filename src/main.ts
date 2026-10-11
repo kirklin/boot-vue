@@ -11,10 +11,7 @@ import App from "~/App.vue";
 import { router } from "./router";
 import { registerStore } from "./store";
 
-// reset css
-import "@kirklin/reset-css/kirklin.css";
 import "~/styles/main.css";
-import "uno.css";
 
 const app = createApp(App);
 app.use(createI18n({

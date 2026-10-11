@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Avatar from "~/assets/avatar.jpg";
+import avatar from "~/assets/avatar.jpg";
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 
 defineOptions({
   name: "LayoutFooter",
@@ -7,46 +8,32 @@ defineOptions({
 </script>
 
 <template>
-  <footer
-    class="text-base-content px-4 pt-2 border-t border-base-100 bg-base-200 opacity-90 bottom-0 sticky footer footer-center"
-  >
-    <div class="flex flex-row gap-6 max-w-6xl w-full items-center justify-between">
+  <footer class="bg-background/90 sticky bottom-0 border-t backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3">
       <a
         href="https://github.com/kirklin"
         target="_blank"
         rel="nofollow"
-        class="inline-flex items-center justify-center hover:opacity-90"
-      ><div class="mr-3 avatar">
-         <div class="p-px bg-neutral h-14 w-14 mask mask-squircle">
-           <img
-             width="54"
-             height="54"
-             :src="Avatar"
-             alt="Kirk Lin"
-             class="mask mask-squircle"
-           >
-         </div>
-       </div>
-        <div class="text-left">
-          <p class="text-xs text-base-content text-opacity-50">Created by</p>
-          <h2 class="text-lg text-base-content font-bold">Kirk Lin</h2>
+        class="flex items-center gap-3 hover:opacity-90"
+      >
+        <Avatar class="size-12">
+          <AvatarImage :src="avatar" alt="Kirk Lin" />
+          <AvatarFallback>KL</AvatarFallback>
+        </Avatar>
+        <div>
+          <p class="text-muted-foreground text-xs">Created by</p>
+          <h2 class="text-lg font-bold">Kirk Lin</h2>
         </div>
       </a>
-      <div class="text-left flex flex-col gap-4 items-center sm:flex-row">
-        <div class="pb-4 flex gap-4">
-          <a
-            href="https://github.com/kirklin/boot-vue"
-            target="_blank"
-            rel="nofollow"
-            class="rounded bg-base-100 flex flex-col w-[130px] items-center"
-          >
-            <h3 class="text-xs text-base-content/50 font-bold p-2">BootVue™</h3>
-            <p class="text-xs text-base-content/50 tracking-tighter px-1.5 py-2">
-              All Rights Reserved.
-            </p>
-          </a>
-        </div>
-      </div>
+      <a
+        href="https://github.com/kirklin/boot-vue"
+        target="_blank"
+        rel="nofollow"
+        class="bg-muted text-muted-foreground flex flex-col items-center gap-1 rounded-lg px-4 py-2 text-xs"
+      >
+        <h3 class="font-bold">BootVue™</h3>
+        <p class="tracking-tight">All Rights Reserved.</p>
+      </a>
     </div>
   </footer>
 </template>

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { Button } from "~/components/ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "~/components/ui/card";
+
 defineOptions({
   name: "ErrorPage",
 });
@@ -7,19 +10,21 @@ const errorCode = ref<number>(404);
 </script>
 
 <template>
-  <div class="py-20 bg-base-100 flex flex-col gap-20 items-center">
-    <div class="bg-base-100 w-96 card">
-      <div class="card-body">
-        <h2 class="card-title">
+  <div class="flex flex-col items-center gap-20 px-4 py-20">
+    <Card class="w-full max-w-96">
+      <CardHeader>
+        <CardTitle class="text-lg font-semibold">
           Error {{ errorCode }}!
-        </h2>
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
         <p>We're sorry, something is not right, page not found!</p>
-        <div class="justify-end card-actions">
-          <button class="btn btn-primary" @click="router.back()">
-            Back !
-          </button>
-        </div>
-      </div>
-    </div>
+      </CardContent>
+      <CardFooter class="justify-end">
+        <Button @click="router.back()">
+          Back !
+        </Button>
+      </CardFooter>
+    </Card>
   </div>
 </template>
